@@ -1,0 +1,226 @@
+{
+ "mmicr": {
+  "species": "Micronycteris microtus",
+  "file": "Micronycteris_microtus.stl",
+  "source_ct_mesh": "micro High Res.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 51980,
+  "n_vertices": 25986,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.27,
+  "edge_mm_mean_min_max": [
+   0.2703402289923109,
+   0.016705165258872914,
+   0.533112443722318
+  ],
+  "f_max_6_per_wavelength_khz": 211.4619303229658,
+  "area_mm2": 1623.7820355476983,
+  "area_ct_mm2": 1631.2748528005682,
+  "volume_mm3": 1193.2550631787558,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.02442056994429825,
+   0.06753541533761326,
+   0.22438885908551492
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.03848280380843465,
+   0.10529191753663027,
+   0.4233050578362577
+  ]
+ },
+ "pdisc": {
+  "species": "Phyllostomus discolor",
+  "file": "Phyllostomus_discolor.stl",
+  "source_ct_mesh": "phyllo.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 53984,
+  "n_vertices": 26982,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.3893243977434791,
+  "edge_mm_mean_min_max": [
+   0.3921391982522893,
+   0.007280888184336088,
+   0.7613867992331265
+  ],
+  "f_max_6_per_wavelength_khz": 145.7815666514612,
+  "area_mm2": 3550.4687222142225,
+  "area_ct_mm2": 3609.7225852442552,
+  "volume_mm3": 8512.305846747808,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.05177841822816177,
+   0.1589317018552385,
+   0.714106433252242
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.05868372947863408,
+   0.16276447420588036,
+   0.7655756291826493
+  ]
+ },
+ "mmacr": {
+  "species": "Macrophyllum macrophyllum",
+  "file": "Macrophyllum_macrophyllum.stl",
+  "source_ct_mesh": "macro.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 46306,
+  "n_vertices": 23149,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.27,
+  "edge_mm_mean_min_max": [
+   0.27682481722473223,
+   0.08002850312469667,
+   0.5126643499168625
+  ],
+  "f_max_6_per_wavelength_khz": 206.50845989815127,
+  "area_mm2": 1504.2609662482582,
+  "area_ct_mm2": 1509.9585279775492,
+  "volume_mm3": 1482.771032816283,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.04901219717883637,
+   0.1399569960868508,
+   0.2610095884008189
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.04009798895354769,
+   0.10723847445007816,
+   0.33799293888278503
+  ]
+ },
+ "rrouxi": {
+  "species": "Rhinolophus rouxii",
+  "file": "Rhinolophus_rouxii.stl",
+  "source_ct_mesh": "rouxi.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 53672,
+  "n_vertices": 26830,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.27348111957778076,
+  "edge_mm_mean_min_max": [
+   0.27883947723837316,
+   0.05012140400424521,
+   0.531894919709005
+  ],
+  "f_max_6_per_wavelength_khz": 205.0164031034826,
+  "area_mm2": 1773.4034385893005,
+  "area_ct_mm2": 1781.1696406607741,
+  "volume_mm3": 2007.7026320531538,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.0469162172027891,
+   0.14137527739819877,
+   0.24398833149514645
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.040387491548107717,
+   0.10842892422465304,
+   0.37421596684045466
+  ]
+ },
+ "efusc": {
+  "species": "Eptesicus fuscus",
+  "file": "Eptesicus_fuscus.stl",
+  "source_ct_mesh": "eptesicus.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 52474,
+  "n_vertices": 26239,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.2894184393224238,
+  "edge_mm_mean_min_max": [
+   0.29883748578957303,
+   0.07951101525524495,
+   0.5753614379241823
+  ],
+  "f_max_6_per_wavelength_khz": 191.2968398714232,
+  "area_mm2": 1990.7527985663348,
+  "area_ct_mm2": 1994.816631367192,
+  "volume_mm3": 3068.9769611111024,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.05342691210457276,
+   0.14898074349456977,
+   0.3013155296377003
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.04307283142774105,
+   0.11645774243244737,
+   0.21375526779760323
+  ]
+ },
+ "mdaub": {
+  "species": "Myotis daubentonii",
+  "file": "Myotis_daubentonii.stl",
+  "source_ct_mesh": "myotis.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 35536,
+  "n_vertices": 17764,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.27,
+  "edge_mm_mean_min_max": [
+   0.27606833897114424,
+   0.051427459587817144,
+   0.553352198899092
+  ],
+  "f_max_6_per_wavelength_khz": 207.0743312315939,
+  "area_mm2": 1148.7714293469528,
+  "area_ct_mm2": 1152.348946277641,
+  "volume_mm3": 1402.8936077501528,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.05438757759353877,
+   0.1537202383502575,
+   0.2846534079257908
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.038595986297877034,
+   0.1065593865694029,
+   0.23583812523296432
+  ]
+ },
+ "rform": {
+  "species": "Rhinolophus formosae",
+  "file": "Rhinolophus_formosae.stl",
+  "source_ct_mesh": "formosae.stl",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "n_faces": 57746,
+  "n_vertices": 28835,
+  "watertight": true,
+  "winding_consistent": true,
+  "self_intersections": 0,
+  "bodies": 1,
+  "target_edge_mm": 0.48779308301924135,
+  "edge_mm_mean_min_max": [
+   0.42436086403472467,
+   0.030553596781464114,
+   0.9233256275131997
+  ],
+  "f_max_6_per_wavelength_khz": 134.71239106061586,
+  "area_mm2": 4714.429166010402,
+  "area_ct_mm2": 4723.305362800158,
+  "volume_mm3": 5064.966114521564,
+  "deviation_to_ct_mm_median_p95_max": [
+   0.061001681860087066,
+   0.18204224885035405,
+   0.32239447666622073
+  ],
+  "deviation_from_ct_mm_median_p95_max": [
+   0.06775906422215133,
+   0.1939564657409341,
+   0.39438083517247435
+  ]
+ }
+}

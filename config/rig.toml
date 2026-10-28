@@ -1,0 +1,12 @@
+# Manual overrides of the automatic pinna / noseleaf segmentation (batertf/rig.py, docs/rigging.md).
+# [defaults] overrides batertf.rig.DEFAULTS for all species; [species.<key>] for one species;
+# [species.<key>.<appendage>] (pinna_left, pinna_right, noseleaf):
+#   include = [[x, y, z], ...]   mm, CT frame: add the thin component nearest to each point
+#   exclude = [[x, y, z], ...]   mm: drop the thin component nearest to each point
+#   enabled = false               no rig for this appendage
+#   max_lateral_mm = 2.5          noseleaf only: drop flaps further than this from the nostril midline (|y|)
+
+[species.rform.noseleaf]
+# R. formosae: the thin component above the nostrils also holds two lateral flaps (lateral horseshoe lappets,
+# out to |y| = 6 mm); the movable noseleaf is the midline sella + lancet.
+max_lateral_mm = 2.5

@@ -1,0 +1,21 @@
+{
+ "upload_type": "software",
+ "title": "batertf: GPU boundary element code, rigs and tools for bat emission and reception directivities",
+ "creators": [
+  {
+   "name": "Steckel, Jan",
+   "affiliation": "Cosys-Lab, University of Antwerp, Belgium; Flanders Make, Lommel, Belgium"
+  }
+ ],
+ "description": "Code that produced the dataset 'Full-sphere emission and reception directivities of seven echolocating bat species': mesh cleaning, GPU boundary element solver (Burton-Miller), source placement, posable rigs of pinnae and noseleaves, validation, figures, and a Python module and Python/MATLAB examples to use the data.",
+ "keywords": [
+  "echolocation",
+  "bats",
+  "HRTF",
+  "ERTF",
+  "boundary element method",
+  "biosonar"
+ ],
+ "access_right": "open",
+ "license": "BSD-3-Clause"
+}

@@ -1,0 +1,50 @@
+Micronycteris microtus.stl: 46100 faces, NumCalc run /data/BatERTF/work/runs/pilot2_mmicr, grid sphere
+source  f[kHz]  rms dB  p99 dB  max dB  mean dB  phase rms [deg]  corr(dB)
+earL0    125.0    0.03    0.11    0.29   -0.00              0.1    1.0000
+earL0    150.0    0.03    0.10    0.29   +0.00              0.1    1.0000
+earL1    125.0    0.03    0.12    0.27   +0.00              0.1    1.0000
+earL1    150.0    0.03    0.12    0.29   +0.00              0.1    1.0000
+earL2    125.0    0.03    0.11    0.28   +0.00              0.1    1.0000
+earL2    150.0    0.03    0.13    0.26   +0.00              0.1    1.0000
+earL3    150.0    0.03    0.11    0.25   -0.00              0.1    1.0000
+earR0    150.0    0.04    0.12    0.27   +0.00              0.1    1.0000
+earR1    150.0    0.04    0.14    0.26   +0.00              0.1    1.0000
+earR2    150.0    0.03    0.12    0.35   +0.00              0.1    1.0000
+earR3    150.0    0.02    0.07    0.17   +0.00              0.1    1.0000
+nose00   150.0    0.01    0.04    0.19   +0.00              0.0    1.0000
+nose01   150.0    0.01    0.05    0.20   +0.00              0.0    1.0000
+nose02   150.0    0.01    0.02    0.10   +0.00              0.0    1.0000
+nose03   150.0    0.01    0.03    0.13   -0.00              0.0    1.0000
+nose04   150.0    0.00    0.01    0.08   +0.00              0.0    1.0000
+nose05   150.0    0.01    0.03    0.18   -0.00              0.0    1.0000
+nose06   150.0    0.00    0.02    0.07   +0.00              0.0    1.0000
+nose07   150.0    0.01    0.02    0.09   +0.00              0.0    1.0000
+nose08   150.0    0.01    0.02    0.12   +0.00              0.0    1.0000
+nose09   150.0    0.01    0.02    0.14   +0.00              0.0    1.0000
+nose10   150.0    0.01    0.04    0.14   +0.00              0.0    1.0000
+nose11   150.0    0.01    0.05    0.27   -0.00              0.0    1.0000
+nose12   150.0    0.01    0.04    0.15   +0.00              0.0    1.0000
+nose13   150.0    0.01    0.04    0.17   +0.00              0.0    1.0000
+nose14   150.0    0.01    0.04    0.15   +0.00              0.0    1.0000
+nose15   150.0    0.01    0.03    0.13   +0.00              0.0    1.0000
+nose16   150.0    0.01    0.05    0.19   -0.00              0.0    1.0000
+nose17   150.0    0.01    0.06    0.19   -0.00              0.0    1.0000
+nose18   150.0    0.01    0.03    0.10   -0.00              0.0    1.0000
+nose19   150.0    0.01    0.02    0.09   -0.00              0.0    1.0000
+nose20  skipped (NumCalc result incomplete)
+nose21  skipped (NumCalc result incomplete)
+nose22  skipped (NumCalc result incomplete)
+nose23  skipped (NumCalc result incomplete)
+nose24  skipped (NumCalc result incomplete)
+nose25  skipped (NumCalc result incomplete)
+nose26  skipped (NumCalc result incomplete)
+nose27  skipped (NumCalc result incomplete)
+nose28  skipped (NumCalc result incomplete)
+nose29  skipped (NumCalc result incomplete)
+nose30  skipped (NumCalc result incomplete)
+summary over sources: median / max of rms dB, max of max dB, max phase rms, min corr
+   125.0 kHz (3 sources): rms 0.03 / 0.03 dB, max 0.29 dB, phase rms 0.1 deg, corr 1.0000
+   150.0 kHz (28 sources): rms 0.01 / 0.04 dB, max 0.35 dB, phase rms 0.1 deg, corr 1.0000
+timing (39 sources per solve): setup 0.9 s, near pairs [627532, 7017225]
+   125.0 kHz: assembly 4.0 s, GMRES 5.5 s (96 it, res 9.2e-06), field 0.5 s, peak GPU 24.2 GB
+   150.0 kHz: assembly 3.9 s, GMRES 5.5 s (97 it, res 9.2e-06), field 0.5 s, peak GPU 24.6 GB

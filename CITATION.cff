@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the Data Descriptor and the dataset (see README.md)."
+title: "batertf: GPU boundary element code, rigs and tools for bat emission and reception directivities"
+authors:
+  - family-names: Steckel
+    given-names: Jan
+    affiliation: "Cosys-Lab, University of Antwerp, Belgium; Flanders Make, Lommel, Belgium"
+# TODO: ORCID, DOI of the paper
+type: software
+license: BSD-3-Clause
+keywords: [echolocation, bats, HRTF, ERTF, boundary element method, biosonar]
+repository-code: "https://github.com/Cosys-Lab/bat_ertf_dataset"
+doi: "10.5281/zenodo.23729269"

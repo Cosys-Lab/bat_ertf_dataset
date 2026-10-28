@@ -1,0 +1,5 @@
+Micronycteris microtus: 241 frequencies 40.0-160.0 kHz, frontal hemisphere, patterns normalized per frequency and clipped at -30 dB
+source    corr median [p10, p90]    rms dB median [p10, p90]    peak error deg median [p10, p90]
+left       0.848 [ 0.717,  0.937]    5.887 [ 3.314,  6.930]   16.919 [ 5.354, 40.310]
+right      0.786 [ 0.679,  0.914]    5.212 [ 3.224,  6.268]   12.887 [ 4.850, 28.814]
+emitter    0.946 [ 0.887,  0.980]    2.391 [ 0.986,  3.987]    5.000 [ 0.000, 10.176]

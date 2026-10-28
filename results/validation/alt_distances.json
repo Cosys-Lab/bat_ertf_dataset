@@ -1,0 +1,1182 @@
+{
+ "pdisc": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.007671610452234745,
+      0.00800296850502491,
+      -0.007407291326671839
+     ]
+    ],
+    "distance_mm": 0.5117281246747748
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.008545900695025921,
+      0.007330599706619978,
+      -0.007381899747997522
+     ]
+    ],
+    "distance_mm": 1.5816166467399344
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.008465200662612915,
+      0.008072400465607643,
+      -0.006506199948489666
+     ]
+    ],
+    "distance_mm": 1.6237892545643962
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.010598077438771725,
+      0.010404743254184723,
+      -0.004699577111750841
+     ]
+    ],
+    "distance_mm": 4.879797216327159
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.00814022682607174,
+      -0.008135169744491577,
+      -0.007766905706375837
+     ]
+    ],
+    "distance_mm": 0.7488718498013276
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.00839800015091896,
+      -0.007606599945574999,
+      -0.006884300149977207
+     ]
+    ],
+    "distance_mm": 1.5752666164753317
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.009127099998295307,
+      -0.008745200000703335,
+      -0.0072674998082220554
+     ]
+    ],
+    "distance_mm": 0.9523472689310574
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0073652747087180614,
+      -0.008804350160062313,
+      -0.007985024712979794
+     ]
+    ],
+    "distance_mm": 1.2727675744707503
+   }
+  ],
+  "emitter": [
+   {
+    "source": "emitter_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.018055260181427002,
+      -0.002232078928500414,
+      -0.005520686041563749
+     ],
+     [
+      0.017593586817383766,
+      -0.0003442882443778217,
+      -0.005188765935599804
+     ]
+    ],
+    "midpoint_distance_mm": 2.0905486632659573,
+    "mean_per_nostril_distance_mm": 2.098836264815986,
+    "pair_spacing_mm": 1.971564586532777
+   },
+   {
+    "source": "emitter_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.017280347645282745,
+      -0.00046112891868688166,
+      -0.004345621448010206
+     ],
+     [
+      0.01698870025575161,
+      -0.0027842000126838684,
+      -0.004202200099825859
+     ]
+    ],
+    "midpoint_distance_mm": 0.8512606228045171,
+    "mean_per_nostril_distance_mm": 0.8715719459035576,
+    "pair_spacing_mm": 2.3456954599222164
+   },
+   {
+    "source": "emitter_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.018453100696206093,
+      -0.002435800153762102,
+      -0.00631739990785718
+     ],
+     [
+      0.018518172204494476,
+      -0.0007268182234838605,
+      -0.00616081478074193
+     ]
+    ],
+    "midpoint_distance_mm": 3.1682028227864936,
+    "mean_per_nostril_distance_mm": 3.1708716892763733,
+    "pair_spacing_mm": 1.7173737045972752
+   },
+   {
+    "source": "emitter_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.019394338130950928,
+      -0.0009533517295494676,
+      -0.006559979636222124
+     ],
+     [
+      0.019834794104099274,
+      -0.002561889821663499,
+      -0.006769189611077309
+     ]
+    ],
+    "midpoint_distance_mm": 4.160131701161983,
+    "mean_per_nostril_distance_mm": 4.165604123342476,
+    "pair_spacing_mm": 1.6808227365319675
+   }
+  ]
+ },
+ "mmicr": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.008078113198280334,
+      0.004737352952361107,
+      0.0005635608686134219
+     ]
+    ],
+    "distance_mm": 0.7445143350557828
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0075563411228358746,
+      0.004246490076184273,
+      -0.00022661946422886103
+     ]
+    ],
+    "distance_mm": 1.5275900949197467
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.00524769676849246,
+      0.0047934832982718945,
+      0.0030209727119654417
+     ]
+    ],
+    "distance_mm": 3.2990101550909294
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0065371012315154076,
+      0.004214945714920759,
+      0.0003956750442739576
+     ]
+    ],
+    "distance_mm": 1.6871078793262333
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0074106440879404545,
+      -0.006452498026192188,
+      0.00047946564154699445
+     ]
+    ],
+    "distance_mm": 0.7262516644167215
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.006865433417260647,
+      -0.006409414578229189,
+      -0.00048814041656441987
+     ]
+    ],
+    "distance_mm": 1.521560412513897
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.007276827469468117,
+      -0.006134225055575371,
+      0.0014883684925734997
+     ]
+    ],
+    "distance_mm": 0.8044755086463186
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.005699686706066132,
+      -0.005375935696065426,
+      -0.00022267030726652592
+     ]
+    ],
+    "distance_mm": 2.048922908069689
+   }
+  ],
+  "emitter": [
+   {
+    "source": "emitter_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0009032816742546856,
+      0.0008405416738241911,
+      -0.005747740622609854
+     ],
+     [
+      0.0009465447510592639,
+      -0.0008266068762168288,
+      -0.005656235385686159
+     ]
+    ],
+    "midpoint_distance_mm": 3.107308976411765,
+    "mean_per_nostril_distance_mm": 3.117534683253755,
+    "pair_spacing_mm": 1.6702183061213691
+   },
+   {
+    "source": "emitter_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0013432479463517666,
+      0.0009679406648501754,
+      -0.0063132415525615215
+     ],
+     [
+      0.0018564972560852766,
+      -0.0010240545962005854,
+      -0.0066831172443926334
+     ]
+    ],
+    "midpoint_distance_mm": 2.1528723332356616,
+    "mean_per_nostril_distance_mm": 2.1535019488600495,
+    "pair_spacing_mm": 2.0900425836327248
+   },
+   {
+    "source": "emitter_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.002148248488083482,
+      -0.0007486471440643072,
+      -0.009225131012499332
+     ],
+     [
+      0.0018324493430554867,
+      0.001021763775497675,
+      -0.009961680509150028
+     ]
+    ],
+    "midpoint_distance_mm": 1.0253919428196454,
+    "mean_per_nostril_distance_mm": 1.0311125909776908,
+    "pair_spacing_mm": 1.9433448188937312
+   },
+   {
+    "source": "emitter_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.002690927591174841,
+      -0.001102286041714251,
+      -0.007820851169526577
+     ],
+     [
+      0.0026401847135275602,
+      0.000931082118768245,
+      -0.007779785897582769
+     ]
+    ],
+    "midpoint_distance_mm": 1.0364487047609299,
+    "mean_per_nostril_distance_mm": 1.0388746177158992,
+    "pair_spacing_mm": 2.03441570782761
+   }
+  ]
+ },
+ "mmacr": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004427600186318159,
+      0.006049124989658594,
+      -0.000505700008943677
+     ]
+    ],
+    "distance_mm": 1.4748497299157413
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004571199882775545,
+      0.005467299837619066,
+      0.0004413000133354217
+     ]
+    ],
+    "distance_mm": 1.1292538227060815
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0049718087539076805,
+      0.0068454802967607975,
+      0.00011879530939040706
+     ]
+    ],
+    "distance_mm": 1.8569252491783608
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.003466299967840314,
+      0.005938499700278044,
+      0.0003364000003784895
+     ]
+    ],
+    "distance_mm": 2.2264217905272057
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004056835081428289,
+      -0.004226015880703926,
+      -0.0007189582102000713
+     ]
+    ],
+    "distance_mm": 1.370863083961616
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.005752624943852425,
+      -0.00496315024793148,
+      1.2474996765377e-05
+     ]
+    ],
+    "distance_mm": 1.4374766159321712
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0032049985602498055,
+      -0.004386179149150848,
+      0.00014175832620821893
+     ]
+    ],
+    "distance_mm": 2.013452426364139
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.005195177625864744,
+      -0.005441464949399233,
+      0.0008584526367485523
+     ]
+    ],
+    "distance_mm": 1.9525091514653512
+   }
+  ],
+  "emitter": [
+   {
+    "source": "emitter_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.00335926772095263,
+      -0.00032114010537043214,
+      -0.005165001377463341
+     ],
+     [
+      0.0036415597423911095,
+      0.0020630487706512213,
+      -0.005253104027360678
+     ]
+    ],
+    "midpoint_distance_mm": 1.031197718217848,
+    "mean_per_nostril_distance_mm": 1.0367758537082212,
+    "pair_spacing_mm": 2.4024586279126954
+   },
+   {
+    "source": "emitter_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.00448325602337718,
+      0.001961125060915947,
+      -0.004241870250552893
+     ],
+     [
+      0.004091199953109026,
+      -0.00045950000640004873,
+      -0.004141800105571747
+     ]
+    ],
+    "midpoint_distance_mm": 2.318649012079005,
+    "mean_per_nostril_distance_mm": 2.3224837552604463,
+    "pair_spacing_mm": 2.4542102014027294
+   },
+   {
+    "source": "emitter_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0022622467949986458,
+      0.002053332282230258,
+      -0.003618121612817049
+     ],
+     [
+      0.0023101340048015118,
+      0.000326512788888067,
+      -0.0033516213297843933
+     ]
+    ],
+    "midpoint_distance_mm": 2.6675897926816803,
+    "mean_per_nostril_distance_mm": 2.684902977187835,
+    "pair_spacing_mm": 1.7479190908923017
+   },
+   {
+    "source": "emitter_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0020176218822598457,
+      0.002013830002397299,
+      -0.002170150401070714
+     ],
+     [
+      0.0021300853695720434,
+      0.00029935588827356696,
+      -0.00274971267208457
+     ]
+    ],
+    "midpoint_distance_mm": 3.705024328811259,
+    "mean_per_nostril_distance_mm": 3.717077454131603,
+    "pair_spacing_mm": 1.813273821010361
+   }
+  ]
+ },
+ "rrouxi": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004704765975475311,
+      0.005500048398971558,
+      0.00488825049251318
+     ]
+    ],
+    "distance_mm": 1.2488390457913718
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.005873185582458973,
+      0.004968443885445595,
+      0.004625529516488314
+     ]
+    ],
+    "distance_mm": 1.1696390234452259
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.006525075063109398,
+      0.005787424743175507,
+      0.004950325004756451
+     ]
+    ],
+    "distance_mm": 1.4499900560653978
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.005982890259474516,
+      0.006648143753409386,
+      0.005279217381030321
+     ]
+    ],
+    "distance_mm": 1.6306594760483355
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.006312800105661154,
+      -0.004967599641531706,
+      0.004395199939608574
+     ]
+    ],
+    "distance_mm": 1.030174816243087
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.005829199682921171,
+      -0.0032713001128286123,
+      0.0045194001868367195
+     ]
+    ],
+    "distance_mm": 2.0409640065067687
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.006266034673899412,
+      -0.006150429602712393,
+      0.0048802937380969524
+     ]
+    ],
+    "distance_mm": 1.6294907706658508
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004011699929833412,
+      -0.006006999872624874,
+      0.0036965999752283096
+     ]
+    ],
+    "distance_mm": 1.674803271050706
+   }
+  ],
+  "emitter": [
+   {
+    "source": "emitter_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0012657574843615294,
+      0.0008239273447543383,
+      -0.007492444943636656
+     ],
+     [
+      0.0013678795658051968,
+      -0.0007389093516394496,
+      -0.008137351833283901
+     ]
+    ],
+    "midpoint_distance_mm": 2.486302710186577,
+    "mean_per_nostril_distance_mm": 2.512138120397444,
+    "pair_spacing_mm": 1.6937509720817638
+   },
+   {
+    "source": "emitter_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0014515999937430024,
+      0.0013380000600591302,
+      -0.006608900148421526
+     ],
+     [
+      0.0014179283753037453,
+      -0.0003891386149916798,
+      -0.006929062772542238
+     ]
+    ],
+    "midpoint_distance_mm": 1.4406147912954106,
+    "mean_per_nostril_distance_mm": 1.4693250009183128,
+    "pair_spacing_mm": 1.7568852798712973
+   },
+   {
+    "source": "emitter_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.0031445000786334276,
+      0.0011035000206902623,
+      -0.0035717999562621117
+     ],
+     [
+      0.002461255295202136,
+      -0.00037211491144262254,
+      -0.0035341312177479267
+     ]
+    ],
+    "midpoint_distance_mm": 2.161256797624086,
+    "mean_per_nostril_distance_mm": 2.1623693292528854,
+    "pair_spacing_mm": 1.6265551930017195
+   },
+   {
+    "source": "emitter_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.001500667305663228,
+      -0.0007278320263139904,
+      -0.0004427279927767813
+     ],
+     [
+      0.0018388476455584168,
+      0.000685528852045536,
+      -0.0012788721360266209
+     ]
+    ],
+    "midpoint_distance_mm": 4.504430393754344,
+    "mean_per_nostril_distance_mm": 4.506428368450106,
+    "pair_spacing_mm": 1.6766311290978244
+   }
+  ]
+ },
+ "rform": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.00665676686912775,
+      0.009904597885906696,
+      0.0022462145425379276
+     ]
+    ],
+    "distance_mm": 1.8386733630146892
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.006783688440918922,
+      0.0105966255068779,
+      0.0029928016010671854
+     ]
+    ],
+    "distance_mm": 2.825036789468964
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.007533380761742592,
+      0.00742593826726079,
+      0.000927905784919858
+     ]
+    ],
+    "distance_mm": 1.2941184826607748
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.00783695001155138,
+      0.009212800301611423,
+      0.0015389500185847282
+     ]
+    ],
+    "distance_mm": 1.491541485410063
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.00420715007930994,
+      -0.005952150095254183,
+      0.0017102999845519662
+     ]
+    ],
+    "distance_mm": 1.1491608848742012
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.003012924687936902,
+      -0.007361459545791149,
+      0.0026505968999117613
+     ]
+    ],
+    "distance_mm": 1.4790703416515307
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.002869583433493972,
+      -0.005415397230535746,
+      0.0021768759470432997
+     ]
+    ],
+    "distance_mm": 1.893356379085316
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.002935458905994892,
+      -0.0054221367463469505,
+      0.0032101660035550594
+     ]
+    ],
+    "distance_mm": 2.47256286826154
+   }
+  ],
+  "emitter": [
+   {
+    "source": "emitter_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.003163351211696863,
+      -0.0005003252881579101,
+      -0.012186325155198574
+     ],
+     [
+      0.003197150072082877,
+      0.0014479999663308263,
+      -0.012300524860620499
+     ]
+    ],
+    "midpoint_distance_mm": 2.15655396898039,
+    "mean_per_nostril_distance_mm": 2.157885744716881,
+    "pair_spacing_mm": 1.9519618933166822
+   },
+   {
+    "source": "emitter_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.004161899909377098,
+      3.7500001781154424e-05,
+      -0.012048899196088314
+     ],
+     [
+      0.004655899945646524,
+      0.0015368000604212284,
+      -0.01209850050508976
+     ]
+    ],
+    "midpoint_distance_mm": 1.6035875614644235,
+    "mean_per_nostril_distance_mm": 1.637243138089871,
+    "pair_spacing_mm": 1.579366009361662
+   },
+   {
+    "source": "emitter_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.005076291970908642,
+      0.0013452876592054963,
+      -0.008175309747457504
+     ],
+     [
+      0.004907524213194847,
+      -0.0002299550105817616,
+      -0.009010314010083675
+     ]
+    ],
+    "midpoint_distance_mm": 1.9778879925442978,
+    "mean_per_nostril_distance_mm": 1.9869198536086379,
+    "pair_spacing_mm": 1.7908389495892996
+   },
+   {
+    "source": "emitter_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      0.005504527594894171,
+      0.0012742271646857262,
+      -0.007351708598434925
+     ],
+     [
+      0.005169449839740992,
+      -0.001052199979312718,
+      -0.007768650073558092
+     ]
+    ],
+    "midpoint_distance_mm": 3.116366286080668,
+    "mean_per_nostril_distance_mm": 3.1287000917741157,
+    "pair_spacing_mm": 2.3871280971093976
+   }
+  ]
+ },
+ "efusc": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0035327107179909945,
+      0.0076503087766468525,
+      -0.004209375940263271
+     ]
+    ],
+    "distance_mm": 3.443625351148188
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.003769500181078911,
+      0.0069132000207901,
+      -0.006838675122708082
+     ]
+    ],
+    "distance_mm": 1.3933318676687825
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.006940742488950491,
+      0.008884558454155922,
+      -0.004060613457113504
+     ]
+    ],
+    "distance_mm": 4.880659300719882
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004713899921625853,
+      0.006412300281226635,
+      -0.005870500113815069
+     ]
+    ],
+    "distance_mm": 1.244956607060897
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004252315033227205,
+      -0.005284429062157869,
+      -0.006834226660430431
+     ]
+    ],
+    "distance_mm": 1.1269079349202595
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004990399815142155,
+      -0.004120999947190285,
+      -0.0072825998067855835
+     ]
+    ],
+    "distance_mm": 1.2274475248684233
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.003920199815183878,
+      -0.006086728069931269,
+      -0.004907664377242327
+     ]
+    ],
+    "distance_mm": 2.331870450126128
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.008116716518998146,
+      -0.006581405643373728,
+      -0.004125574603676796
+     ]
+    ],
+    "distance_mm": 5.044718549582367
+   }
+  ]
+ },
+ "mdaub": {
+  "left": [
+   {
+    "source": "left_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0035020001232624054,
+      0.005060299765318632,
+      -0.0019349000649526715
+     ]
+    ],
+    "distance_mm": 1.470384223126348
+   },
+   {
+    "source": "left_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.004309061449021101,
+      0.004973150789737701,
+      -0.0004985401756130159
+     ]
+    ],
+    "distance_mm": 1.8766211286321164
+   },
+   {
+    "source": "left_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0043275682255625725,
+      0.00619158148765564,
+      -8.267488738056272e-05
+     ]
+    ],
+    "distance_mm": 3.0523396810564534
+   },
+   {
+    "source": "left_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0031976704485714436,
+      0.004680244252085686,
+      -0.0006162066711112857
+     ]
+    ],
+    "distance_mm": 1.4201599831314113
+   }
+  ],
+  "right": [
+   {
+    "source": "right_alt1",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0030542251188308,
+      -0.0047202748246490955,
+      -0.0016143249813467264
+     ]
+    ],
+    "distance_mm": 1.3192545526052548
+   },
+   {
+    "source": "right_alt2",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0033152999822050333,
+      -0.0052362000569701195,
+      -0.002530100056901574
+     ]
+    ],
+    "distance_mm": 1.4095760667087256
+   },
+   {
+    "source": "right_alt3",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.0024145834613591433,
+      -0.005585128907114267,
+      -0.0018840162083506584
+     ]
+    ],
+    "distance_mm": 2.240039051557299
+   },
+   {
+    "source": "right_alt4",
+    "in_production_file": true,
+    "patch_matches_file": true,
+    "position_m": [
+     [
+      -0.003665497526526451,
+      -0.006090918555855751,
+      -0.0017622725572437048
+     ]
+    ],
+    "distance_mm": 1.943701553532557
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.venv/
+work/
+build/
+config/local.toml
+# reference ERTFs (46 MB, kept in Dropbox, not in git)
+data/reference/*.mat
+# big run outputs / dataset exports live outside Dropbox (see config/local.toml)
+dataset_export/
+paper/**/*.aux
+paper/**/*.log
+paper/**/*.out
+paper/**/*.bbl
+paper/**/*.blg
+paper/**/*.synctex.gz
+paper/**/*.fls
+paper/**/*.fdb_latexmk
+
+# CT source meshes (Dropbox only) and intermediates
+data/meshes/Old/
+data/meshes/ct/
+# papers (copyrighted, Dropbox only)
+data/*.pdf
+paper/scidata/main.pdf
+paper/**/*.fdb_latexmk
+matlab_test/
+zenodo_upload/
+github/

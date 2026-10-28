@@ -1,0 +1,33 @@
+Phyllostomus discolor.stl: 45764 faces, NumCalc run /data/BatERTF/work/runs/pilot_pdisc, grid hemisphere
+source  f[kHz]  rms dB  p99 dB  max dB  mean dB  phase rms [deg]  corr(dB)
+left      30.0    0.03    0.11    0.44   +0.02              0.2    1.0000
+left      45.0    0.06    0.19    0.47   +0.04              0.2    1.0000
+left      60.0    0.03    0.11    0.25   +0.01              0.2    1.0000
+left      75.0    0.05    0.21    0.37   +0.01              0.1    1.0000
+left      90.0    0.04    0.13    0.26   +0.01              0.1    1.0000
+right     30.0    0.02    0.06    0.22   +0.01              0.1    1.0000
+right     45.0    0.06    0.21    0.48   +0.01              0.2    1.0000
+right     60.0    0.04    0.14    0.27   +0.02              0.2    1.0000
+right     75.0    0.07    0.23    0.57   +0.01              0.2    1.0000
+right     90.0    0.03    0.10    0.22   +0.00              0.1    1.0000
+emitter   30.0    0.01    0.02    0.04   -0.00              0.0    1.0000
+emitter   45.0    0.01    0.04    0.17   -0.00              0.0    1.0000
+emitter   60.0    0.01    0.06    0.06   +0.00              0.0    1.0000
+emitter   75.0    0.01    0.04    0.09   -0.00              0.0    1.0000
+emitter   90.0    0.01    0.05    0.17   +0.00              0.0    1.0000
+summary over sources: median / max of rms dB, max of max dB, max phase rms, min corr
+    30.0 kHz (3 sources): rms 0.02 / 0.03 dB, max 0.44 dB, phase rms 0.2 deg, corr 1.0000
+    45.0 kHz (3 sources): rms 0.06 / 0.06 dB, max 0.48 dB, phase rms 0.2 deg, corr 1.0000
+    60.0 kHz (3 sources): rms 0.03 / 0.04 dB, max 0.27 dB, phase rms 0.2 deg, corr 1.0000
+    75.0 kHz (3 sources): rms 0.05 / 0.07 dB, max 0.57 dB, phase rms 0.2 deg, corr 1.0000
+    90.0 kHz (3 sources): rms 0.03 / 0.04 dB, max 0.26 dB, phase rms 0.1 deg, corr 1.0000
+timing (3 sources per solve): setup 0.8 s, near pairs [612537, 5874204]
+    30.0 kHz: assembly 3.9 s, GMRES 2.4 s (144 it, res 9.6e-06), field 0.2 s, peak GPU 19.8 GB
+    45.0 kHz: assembly 3.8 s, GMRES 2.9 s (175 it, res 9.6e-06), field 0.2 s, peak GPU 19.8 GB
+    60.0 kHz: assembly 3.8 s, GMRES 2.5 s (151 it, res 9.8e-06), field 0.2 s, peak GPU 19.8 GB
+    75.0 kHz: assembly 3.8 s, GMRES 1.8 s (108 it, res 9.3e-06), field 0.2 s, peak GPU 19.8 GB
+    90.0 kHz: assembly 3.8 s, GMRES 1.8 s (112 it, res 9.8e-06), field 0.2 s, peak GPU 19.8 GB
+cost per additional source at 60 kHz (GMRES, batched right-hand sides):
+    1 sources: assembly 3.8 s, GMRES 2.2 s (150 it), field 0.1 s
+    2 sources: assembly 3.8 s, GMRES 2.4 s (151 it), field 0.2 s
+    3 sources: assembly 3.8 s, GMRES 2.5 s (151 it), field 0.2 s

@@ -1,0 +1,483 @@
+{
+ "description": "Out-of-sample check of the placement rule (referee item M2), from the stored placement-study data (no BEM runs).\n\nThe published rule (docs/placement_rule.md, scripts/apply_placement_rule.py) has no continuous fitted parameters:\nwhat was \"learned\" on the four calibration ears and two emitters are discrete choices (which descriptors, equal\nweights, the smoothing radius; for the nostrils the score, the spacing window and the mirror tolerance). To test how\nwell such a choice transfers, we re-make it on a training subset and apply it to the held-out data:\n\n- ears: rule family = every single descriptor and every equal-weight sum of two standardized descriptors (front/back\n  ratio, directivity index, frontal gain, peak gain, occlusion), each smoothed over 0, 0.5, 0.75 or 1.0 mm\n  (60 rules, the published one among them). The rule with the highest mean reference match over the training ears\n  is selected (all tied rules are reported) and applied to the held-out ear(s).\n- nostrils: rule family = score (front/back ratio, directivity index or frontal gain of the summed field, or summed\n  occlusion) x spacing window (1.0-3.5 or 1.5-2.5 mm) x mirror tolerance (0.6 or 1.0 mm); 16 rules. Train on one\n  species' emitter, test on the other.\nSplits: leave-one-species-out (train on 2 ears / 1 emitter, test on 2 ears / 1 emitter) and leave-one-ear-out\n(train on 3 ears; note that the held-out ear's mirror partner stays in training).\n\nReference match: pattern correlation with the earlier reference simulation in the refit frame of placement_study.py\n(frontal hemisphere, dB re maximum clipped at -30 dB, mean over the ten study frequencies). For each held-out ear or\nemitter: the selected candidate's match, the best candidate, the median candidate, the most occluded candidate, and\nthe selected candidate's percentile among all candidates (= chance that a random candidate is not better).\nNostril reference set: all candidate pairs 0.8-4 mm apart (as in placement_study.py); also the percentile among the\nmirror-symmetric pairs admissible to the published rule.\n",
+ "ear_rule_family": [
+  "z(front_back_db), smoothed 0.00 mm",
+  "z(front_back_db), smoothed 0.50 mm",
+  "z(front_back_db), smoothed 0.75 mm",
+  "z(front_back_db), smoothed 1.00 mm",
+  "z(directivity_db), smoothed 0.00 mm",
+  "z(directivity_db), smoothed 0.50 mm",
+  "z(directivity_db), smoothed 0.75 mm",
+  "z(directivity_db), smoothed 1.00 mm",
+  "z(gain_front_db), smoothed 0.00 mm",
+  "z(gain_front_db), smoothed 0.50 mm",
+  "z(gain_front_db), smoothed 0.75 mm",
+  "z(gain_front_db), smoothed 1.00 mm",
+  "z(gain_peak_db), smoothed 0.00 mm",
+  "z(gain_peak_db), smoothed 0.50 mm",
+  "z(gain_peak_db), smoothed 0.75 mm",
+  "z(gain_peak_db), smoothed 1.00 mm",
+  "z(occlusion), smoothed 0.00 mm",
+  "z(occlusion), smoothed 0.50 mm",
+  "z(occlusion), smoothed 0.75 mm",
+  "z(occlusion), smoothed 1.00 mm",
+  "z(front_back_db) + z(directivity_db), smoothed 0.00 mm",
+  "z(front_back_db) + z(directivity_db), smoothed 0.50 mm",
+  "z(front_back_db) + z(directivity_db), smoothed 0.75 mm",
+  "z(front_back_db) + z(directivity_db), smoothed 1.00 mm",
+  "z(front_back_db) + z(gain_front_db), smoothed 0.00 mm",
+  "z(front_back_db) + z(gain_front_db), smoothed 0.50 mm",
+  "z(front_back_db) + z(gain_front_db), smoothed 0.75 mm",
+  "z(front_back_db) + z(gain_front_db), smoothed 1.00 mm",
+  "z(front_back_db) + z(gain_peak_db), smoothed 0.00 mm",
+  "z(front_back_db) + z(gain_peak_db), smoothed 0.50 mm",
+  "z(front_back_db) + z(gain_peak_db), smoothed 0.75 mm",
+  "z(front_back_db) + z(gain_peak_db), smoothed 1.00 mm",
+  "z(front_back_db) + z(occlusion), smoothed 0.00 mm",
+  "z(front_back_db) + z(occlusion), smoothed 0.50 mm",
+  "z(front_back_db) + z(occlusion), smoothed 0.75 mm",
+  "z(front_back_db) + z(occlusion), smoothed 1.00 mm",
+  "z(directivity_db) + z(gain_front_db), smoothed 0.00 mm",
+  "z(directivity_db) + z(gain_front_db), smoothed 0.50 mm",
+  "z(directivity_db) + z(gain_front_db), smoothed 0.75 mm",
+  "z(directivity_db) + z(gain_front_db), smoothed 1.00 mm",
+  "z(directivity_db) + z(gain_peak_db), smoothed 0.00 mm",
+  "z(directivity_db) + z(gain_peak_db), smoothed 0.50 mm",
+  "z(directivity_db) + z(gain_peak_db), smoothed 0.75 mm",
+  "z(directivity_db) + z(gain_peak_db), smoothed 1.00 mm",
+  "z(directivity_db) + z(occlusion), smoothed 0.00 mm",
+  "z(directivity_db) + z(occlusion), smoothed 0.50 mm",
+  "z(directivity_db) + z(occlusion), smoothed 0.75 mm",
+  "z(directivity_db) + z(occlusion), smoothed 1.00 mm",
+  "z(gain_front_db) + z(gain_peak_db), smoothed 0.00 mm",
+  "z(gain_front_db) + z(gain_peak_db), smoothed 0.50 mm",
+  "z(gain_front_db) + z(gain_peak_db), smoothed 0.75 mm",
+  "z(gain_front_db) + z(gain_peak_db), smoothed 1.00 mm",
+  "z(gain_front_db) + z(occlusion), smoothed 0.00 mm",
+  "z(gain_front_db) + z(occlusion), smoothed 0.50 mm",
+  "z(gain_front_db) + z(occlusion), smoothed 0.75 mm",
+  "z(gain_front_db) + z(occlusion), smoothed 1.00 mm",
+  "z(gain_peak_db) + z(occlusion), smoothed 0.00 mm",
+  "z(gain_peak_db) + z(occlusion), smoothed 0.50 mm",
+  "z(gain_peak_db) + z(occlusion), smoothed 0.75 mm",
+  "z(gain_peak_db) + z(occlusion), smoothed 1.00 mm"
+ ],
+ "nose_rule_family": [
+  "front_back_db, spacing 1.0-3.5 mm, mirror tol 0.6 mm",
+  "front_back_db, spacing 1.0-3.5 mm, mirror tol 1.0 mm",
+  "front_back_db, spacing 1.5-2.5 mm, mirror tol 0.6 mm",
+  "front_back_db, spacing 1.5-2.5 mm, mirror tol 1.0 mm",
+  "directivity_db, spacing 1.0-3.5 mm, mirror tol 0.6 mm",
+  "directivity_db, spacing 1.0-3.5 mm, mirror tol 1.0 mm",
+  "directivity_db, spacing 1.5-2.5 mm, mirror tol 0.6 mm",
+  "directivity_db, spacing 1.5-2.5 mm, mirror tol 1.0 mm",
+  "gain_front_db, spacing 1.0-3.5 mm, mirror tol 0.6 mm",
+  "gain_front_db, spacing 1.0-3.5 mm, mirror tol 1.0 mm",
+  "gain_front_db, spacing 1.5-2.5 mm, mirror tol 0.6 mm",
+  "gain_front_db, spacing 1.5-2.5 mm, mirror tol 1.0 mm",
+  "occlusion, spacing 1.0-3.5 mm, mirror tol 0.6 mm",
+  "occlusion, spacing 1.0-3.5 mm, mirror tol 1.0 mm",
+  "occlusion, spacing 1.5-2.5 mm, mirror tol 0.6 mm",
+  "occlusion, spacing 1.5-2.5 mm, mirror tol 1.0 mm"
+ ],
+ "published_rule_in_sample": {
+  "ears": {
+   "pdisc_left": {
+    "selected": 0.7726947367901794,
+    "selected_name": "earL075",
+    "best": 0.7779791885479471,
+    "median": 0.6966777524405952,
+    "p10": 0.3838608165004177,
+    "p90": 0.759179549443128,
+    "most_occluded": 0.7696652569662673,
+    "previous_rule_point": 0.7696652569662673,
+    "percentile": 98.80239520958084,
+    "distance_to_best_mm": 0.5117278169890976,
+    "n_candidates": 167
+   },
+   "pdisc_right": {
+    "selected": 0.8302154135258585,
+    "selected_name": "earR112",
+    "best": 0.834415802796778,
+    "median": 0.6289174280672076,
+    "p10": 0.3462887988354232,
+    "p90": 0.789171307357096,
+    "most_occluded": 0.681487150039367,
+    "previous_rule_point": 0.681487150039367,
+    "percentile": 99.36102236421725,
+    "distance_to_best_mm": 0.7488721357356609,
+    "n_candidates": 313
+   },
+   "mmicr_left": {
+    "selected": 0.7775119572039058,
+    "selected_name": "earL149",
+    "best": 0.9358989940849731,
+    "median": 0.5958691744700345,
+    "p10": 0.20949615653816317,
+    "p90": 0.7816851879013715,
+    "most_occluded": 0.6731906661690878,
+    "previous_rule_point": 0.6731906661690878,
+    "percentile": 89.31297709923665,
+    "distance_to_best_mm": 0.7445136554411141,
+    "n_candidates": 262
+   },
+   "mmicr_right": {
+    "selected": 0.86078491145214,
+    "selected_name": "earR065",
+    "best": 0.9221941875815535,
+    "median": 0.5447618581052409,
+    "p10": 0.07864594674450363,
+    "p90": 0.7355542501513487,
+    "most_occluded": 0.6219749130943313,
+    "previous_rule_point": 0.6219749130943313,
+    "percentile": 99.25650557620817,
+    "distance_to_best_mm": 0.72625140966683,
+    "n_candidates": 269
+   }
+  },
+  "emitters": {
+   "pdisc": {
+    "selected": 0.7420102396863861,
+    "selected_pair": [
+     "nose013",
+     "nose017"
+    ],
+    "best": 0.8078928664238827,
+    "median": 0.4093098950137116,
+    "p10": 0.17542896630019528,
+    "p90": 0.6317331495613053,
+    "most_occluded_symmetric_pair": 0.5647931415845744,
+    "percentile": 98.24159021406727,
+    "n_pairs": 1308,
+    "best_symmetric": 0.8078928664238827,
+    "median_symmetric": 0.6525888942040498,
+    "percentile_among_symmetric": 78.26086956521739,
+    "n_symmetric": 23
+   },
+   "mmicr": {
+    "selected": 0.9278611422525496,
+    "selected_pair": [
+     "nose020",
+     "nose033"
+    ],
+    "best": 0.9278611422525496,
+    "median": 0.23840099011800855,
+    "p10": -0.003146057225113998,
+    "p90": 0.5189560790339504,
+    "most_occluded_symmetric_pair": 0.3617166121062428,
+    "percentile": 100.0,
+    "n_pairs": 3290,
+    "best_symmetric": 0.9278611422525496,
+    "median_symmetric": 0.5657112339742107,
+    "percentile_among_symmetric": 100.0,
+    "n_symmetric": 54
+   }
+  }
+ },
+ "family_in_sample": {
+  "ears_best_rules": [
+   "z(front_back_db) + z(gain_front_db), smoothed 1.00 mm",
+   "z(front_back_db) + z(gain_peak_db), smoothed 1.00 mm",
+   "z(directivity_db) + z(gain_front_db), smoothed 1.00 mm",
+   "z(directivity_db) + z(gain_peak_db), smoothed 1.00 mm",
+   "z(gain_peak_db) + z(occlusion), smoothed 1.00 mm"
+  ],
+  "mean_match": 0.8134031695530468,
+  "published_rule_mean_match": 0.8103017547430209,
+  "published_rule_rank": 6
+ },
+ "leave_one_species_out": {
+  "ears": {
+   "pdisc": {
+    "train": [
+     "mmicr_left",
+     "mmicr_right"
+    ],
+    "selected_rules": [
+     "z(gain_peak_db), smoothed 1.00 mm",
+     "z(front_back_db) + z(gain_front_db), smoothed 1.00 mm",
+     "z(front_back_db) + z(gain_peak_db), smoothed 1.00 mm",
+     "z(directivity_db) + z(gain_front_db), smoothed 1.00 mm",
+     "z(directivity_db) + z(gain_peak_db), smoothed 1.00 mm",
+     "z(gain_front_db) + z(gain_peak_db), smoothed 1.00 mm",
+     "z(gain_front_db) + z(occlusion), smoothed 1.00 mm",
+     "z(gain_peak_db) + z(occlusion), smoothed 1.00 mm"
+    ],
+    "train_mean_match": 0.8272907582822517,
+    "test": {
+     "pdisc_left": {
+      "selected": 0.7706560700091376,
+      "selected_name": "earL062",
+      "best": 0.7779791885479471,
+      "median": 0.6966777524405952,
+      "p10": 0.3838608165004177,
+      "p90": 0.759179549443128,
+      "most_occluded": 0.7696652569662673,
+      "previous_rule_point": 0.7696652569662673,
+      "percentile": 97.60479041916167,
+      "distance_to_best_mm": 1.5816162654605532,
+      "n_candidates": 167,
+      "selected_range_over_tied_rules": [
+       0.7706560700091376,
+       0.7706560700091376
+      ]
+     },
+     "pdisc_right": {
+      "selected": 0.7505189448197287,
+      "selected_name": "earR049",
+      "best": 0.834415802796778,
+      "median": 0.6289174280672076,
+      "p10": 0.3462887988354232,
+      "p90": 0.789171307357096,
+      "most_occluded": 0.681487150039367,
+      "previous_rule_point": 0.681487150039367,
+      "percentile": 79.51277955271564,
+      "distance_to_best_mm": 3.3615174815080637,
+      "n_candidates": 313,
+      "selected_range_over_tied_rules": [
+       0.6207587001216994,
+       0.8283750916385462
+      ]
+     }
+    }
+   },
+   "mmicr": {
+    "train": [
+     "pdisc_left",
+     "pdisc_right"
+    ],
+    "selected_rules": [
+     "z(front_back_db) + z(occlusion), smoothed 0.00 mm",
+     "z(front_back_db) + z(occlusion), smoothed 0.50 mm"
+    ],
+    "train_mean_match": 0.8040973010369028,
+    "test": {
+     "mmicr_left": {
+      "selected": 0.7618047633187507,
+      "selected_name": "earL188",
+      "best": 0.9358989940849731,
+      "median": 0.5958691744700345,
+      "p10": 0.20949615653816317,
+      "p90": 0.7816851879013715,
+      "most_occluded": 0.6731906661690878,
+      "previous_rule_point": 0.6731906661690878,
+      "percentile": 87.40458015267176,
+      "distance_to_best_mm": 1.3733044743333376,
+      "n_candidates": 262,
+      "selected_range_over_tied_rules": [
+       0.7618047633187507,
+       0.7618047633187507
+      ]
+     },
+     "mmicr_right": {
+      "selected": 0.8082559483200231,
+      "selected_name": "earR129",
+      "best": 0.9221941875815535,
+      "median": 0.5447618581052409,
+      "p10": 0.07864594674450363,
+      "p90": 0.7355542501513487,
+      "most_occluded": 0.6219749130943313,
+      "previous_rule_point": 0.6219749130943313,
+      "percentile": 97.39776951672863,
+      "distance_to_best_mm": 1.4455454975273256,
+      "n_candidates": 269,
+      "selected_range_over_tied_rules": [
+       0.8082559483200231,
+       0.8082559483200231
+      ]
+     }
+    }
+   }
+  },
+  "emitters": {
+   "pdisc": {
+    "train": "mmicr",
+    "selected_rules": [
+     "front_back_db, spacing 1.0-3.5 mm, mirror tol 1.0 mm",
+     "front_back_db, spacing 1.5-2.5 mm, mirror tol 1.0 mm",
+     "directivity_db, spacing 1.0-3.5 mm, mirror tol 1.0 mm",
+     "directivity_db, spacing 1.5-2.5 mm, mirror tol 1.0 mm"
+    ],
+    "train_match": 0.9278611422525496,
+    "test": {
+     "selected": 0.6992396309540789,
+     "selected_pair": [
+      "nose013",
+      "nose017"
+     ],
+     "best": 0.8078928664238827,
+     "median": 0.4093098950137116,
+     "p10": 0.17542896630019528,
+     "p90": 0.6317331495613053,
+     "most_occluded_symmetric_pair": 0.5647931415845744,
+     "percentile": 95.37461773700306,
+     "n_pairs": 1308,
+     "best_symmetric": 0.8078928664238827,
+     "median_symmetric": 0.6525888942040498,
+     "percentile_among_symmetric": 78.26086956521739,
+     "n_symmetric": 23,
+     "selected_range_over_tied_rules": [
+      0.6531114802214038,
+      0.7420102396863861
+     ]
+    }
+   },
+   "mmicr": {
+    "train": "pdisc",
+    "selected_rules": [
+     "front_back_db, spacing 1.5-2.5 mm, mirror tol 0.6 mm",
+     "gain_front_db, spacing 1.5-2.5 mm, mirror tol 0.6 mm",
+     "occlusion, spacing 1.5-2.5 mm, mirror tol 0.6 mm"
+    ],
+    "train_match": 0.763959770975902,
+    "test": {
+     "selected": 0.900687923642255,
+     "selected_pair": [
+      "nose033",
+      "nose041"
+     ],
+     "best": 0.9278611422525496,
+     "median": 0.23840099011800855,
+     "p10": -0.003146057225113998,
+     "p90": 0.5189560790339504,
+     "most_occluded_symmetric_pair": 0.3617166121062428,
+     "percentile": 99.85815602836878,
+     "n_pairs": 3290,
+     "best_symmetric": 0.9278611422525496,
+     "median_symmetric": 0.5657112339742107,
+     "percentile_among_symmetric": 96.29629629629629,
+     "n_symmetric": 54,
+     "selected_range_over_tied_rules": [
+      0.883858988800084,
+      0.9091023910633405
+     ]
+    }
+   }
+  }
+ },
+ "leave_one_ear_out": {
+  "pdisc_left": {
+   "train": [
+    "pdisc_right",
+    "mmicr_left",
+    "mmicr_right"
+   ],
+   "selected_rules": [
+    "z(front_back_db) + z(gain_front_db), smoothed 1.00 mm",
+    "z(front_back_db) + z(gain_peak_db), smoothed 1.00 mm",
+    "z(directivity_db) + z(gain_front_db), smoothed 1.00 mm",
+    "z(directivity_db) + z(gain_peak_db), smoothed 1.00 mm",
+    "z(gain_peak_db) + z(occlusion), smoothed 1.00 mm"
+   ],
+   "train_mean_match": 0.8276522027343498,
+   "test": {
+    "pdisc_left": {
+     "selected": 0.7706560700091376,
+     "selected_name": "earL062",
+     "best": 0.7779791885479471,
+     "median": 0.6966777524405952,
+     "p10": 0.3838608165004177,
+     "p90": 0.759179549443128,
+     "most_occluded": 0.7696652569662673,
+     "previous_rule_point": 0.7696652569662673,
+     "percentile": 97.60479041916167,
+     "distance_to_best_mm": 1.5816162654605532,
+     "n_candidates": 167,
+     "selected_range_over_tied_rules": [
+      0.7706560700091376,
+      0.7706560700091376
+     ]
+    }
+   }
+  },
+  "pdisc_right": {
+   "train": [
+    "pdisc_left",
+    "mmicr_left",
+    "mmicr_right"
+   ],
+   "selected_rules": [
+    "z(gain_peak_db), smoothed 1.00 mm",
+    "z(front_back_db) + z(gain_front_db), smoothed 1.00 mm",
+    "z(front_back_db) + z(gain_peak_db), smoothed 1.00 mm",
+    "z(directivity_db) + z(gain_front_db), smoothed 1.00 mm",
+    "z(directivity_db) + z(gain_peak_db), smoothed 1.00 mm",
+    "z(gain_front_db) + z(gain_peak_db), smoothed 1.00 mm",
+    "z(gain_front_db) + z(occlusion), smoothed 1.00 mm",
+    "z(gain_peak_db) + z(occlusion), smoothed 1.00 mm"
+   ],
+   "train_mean_match": 0.8084125288578804,
+   "test": {
+    "pdisc_right": {
+     "selected": 0.7505189448197287,
+     "selected_name": "earR049",
+     "best": 0.834415802796778,
+     "median": 0.6289174280672076,
+     "p10": 0.3462887988354232,
+     "p90": 0.789171307357096,
+     "most_occluded": 0.681487150039367,
+     "previous_rule_point": 0.681487150039367,
+     "percentile": 79.51277955271564,
+     "distance_to_best_mm": 3.3615174815080637,
+     "n_candidates": 313,
+     "selected_range_over_tied_rules": [
+      0.6207587001216994,
+      0.8283750916385462
+     ]
+    }
+   }
+  },
+  "mmicr_left": {
+   "train": [
+    "pdisc_left",
+    "pdisc_right",
+    "mmicr_right"
+   ],
+   "selected_rules": [
+    "z(front_back_db) + z(occlusion), smoothed 0.75 mm"
+   ],
+   "train_mean_match": 0.8212316872560592,
+   "test": {
+    "mmicr_left": {
+     "selected": 0.7775119572039058,
+     "selected_name": "earL149",
+     "best": 0.9358989940849731,
+     "median": 0.5958691744700345,
+     "p10": 0.20949615653816317,
+     "p90": 0.7816851879013715,
+     "most_occluded": 0.6731906661690878,
+     "previous_rule_point": 0.6731906661690878,
+     "percentile": 89.31297709923665,
+     "distance_to_best_mm": 0.7445136554411141,
+     "n_candidates": 262
+    }
+   }
+  },
+  "mmicr_right": {
+   "train": [
+    "pdisc_left",
+    "pdisc_right",
+    "mmicr_left"
+   ],
+   "selected_rules": [
+    "z(occlusion), smoothed 1.00 mm"
+   ],
+   "train_mean_match": 0.8019817430399975,
+   "test": {
+    "mmicr_right": {
+     "selected": 0.7813006834240646,
+     "selected_name": "earR051",
+     "best": 0.9221941875815535,
+     "median": 0.5447618581052409,
+     "p10": 0.07864594674450363,
+     "p90": 0.7355542501513487,
+     "most_occluded": 0.6219749130943313,
+     "previous_rule_point": 0.6219749130943313,
+     "percentile": 95.91078066914498,
+     "distance_to_best_mm": 1.7359227206272183,
+     "n_candidates": 269
+    }
+   }
+  }
+ }
+}

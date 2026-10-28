@@ -1,0 +1,9 @@
+numpy>=2
+scipy
+matplotlib
+trimesh
+rtree
+embreex
+h5py
+sofar
+torch  # GPU BEM; CUDA build, e.g. --index-url https://download.pytorch.org/whl/cu130

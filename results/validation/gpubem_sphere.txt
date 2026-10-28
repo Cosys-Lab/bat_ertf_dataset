@@ -1,0 +1,20 @@
+1. Burton-Miller (alpha = +i/k), GMRES tol 1e-5. Errors vs series solution: max/rms dB, max/rms phase [deg]; front = theta <= 90 deg, full = 0..180 deg
+subdivision 4: 5120 faces, mean edge 0.377 mm, cap 35 faces, alpha = 9.47 deg
+   20.0 kHz ka =  1.83  front  0.04/ 0.03 dB   0.1/ 0.1 deg   full  0.04/ 0.03 dB   0.5/ 0.3 deg
+   34.3 kHz ka =  3.14  front  0.04/ 0.03 dB   0.2/ 0.1 deg   full  0.06/ 0.03 dB   0.7/ 0.3 deg
+   40.0 kHz ka =  3.66  front  0.04/ 0.03 dB   0.2/ 0.1 deg   full  0.06/ 0.03 dB   0.8/ 0.3 deg
+   80.0 kHz ka =  7.33  front  0.03/ 0.02 dB   0.3/ 0.2 deg   full  0.27/ 0.05 dB   2.0/ 0.5 deg
+  120.0 kHz ka = 10.99  front  0.06/ 0.03 dB   1.0/ 0.5 deg   full  0.91/ 0.16 dB   5.7/ 1.3 deg
+subdivision 5: 20480 faces, mean edge 0.189 mm, cap 130 faces, alpha = 9.15 deg
+   20.0 kHz ka =  1.83  front  0.02/ 0.02 dB   0.0/ 0.0 deg   full  0.03/ 0.01 dB   0.3/ 0.2 deg
+   34.3 kHz ka =  3.14  front  0.02/ 0.02 dB   0.0/ 0.0 deg   full  0.04/ 0.02 dB   0.5/ 0.2 deg
+   40.0 kHz ka =  3.66  front  0.02/ 0.01 dB   0.1/ 0.0 deg   full  0.04/ 0.02 dB   0.5/ 0.2 deg
+   80.0 kHz ka =  7.33  front  0.05/ 0.02 dB   0.1/ 0.1 deg   full  0.09/ 0.04 dB   0.6/ 0.2 deg
+  120.0 kHz ka = 10.99  front  0.10/ 0.05 dB   0.3/ 0.1 deg   full  0.53/ 0.11 dB   1.9/ 0.5 deg
+2. Irregular frequency, subdivision 4, LU solve. f* = discrete CBIE eigenfrequency near ka = pi (minimum of the smallest singular value of the CBIE matrix). Per formulation: far-field rms/max dB error | error of the surface-mean pressure (the n = 0 term, where the spurious mode lives) | smallest singular value of the Jacobi-scaled matrix
+  f* = 34333.0 Hz (ka = 3.1446; nominal ka = pi at 34300 Hz)
+  f [Hz]                                  CBIE                           BM +i/k                           BM -i/k
+   34000.0     0.01/  0.03 dB |   0.007 | 6.4e-02     0.03/  0.06 dB |   0.010 | 1.1e-01     0.03/  0.06 dB |   0.010 | 1.1e-01
+   34300.0     0.16/  0.36 dB |   0.079 | 6.3e-03     0.03/  0.06 dB |   0.010 | 1.1e-01     0.03/  0.06 dB |   0.010 | 1.1e-01
+   34333.0    14.89/ 21.17 dB |  20.293 | 3.0e-05     0.03/  0.06 dB |   0.010 | 1.1e-01     0.03/  0.06 dB |   0.010 | 1.1e-01
+   34600.0     0.02/  0.05 dB |   0.011 | 5.1e-02     0.03/  0.06 dB |   0.011 | 1.1e-01     0.03/  0.06 dB |   0.011 | 1.1e-01

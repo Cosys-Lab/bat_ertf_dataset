@@ -1,0 +1,17 @@
+Micronycteris microtus (dataset mesh, 51980 faces): GPU BEM (LU) vs NumCalc, frontal hemisphere
+source  f[kHz]  rms dB  max dB  phase rms [deg]  corr(dB)
+left       40.0   0.044    0.71      0.35  1.0000
+left       70.0   0.078    0.66      0.62  1.0000
+left      100.0   0.050    0.56      0.30  1.0000
+left      130.0   0.041    0.74      0.33  1.0000
+left      160.0   0.049    0.48      0.27  1.0000
+right      40.0   0.040    0.42      0.20  1.0000
+right      70.0   0.134    1.71      1.07  0.9999
+right     100.0   0.055    0.56      0.36  1.0000
+right     130.0   0.044    0.41      0.30  1.0000
+right     160.0   0.068    0.51      0.72  1.0000
+emitter    40.0   0.011    0.04      0.08  1.0000
+emitter    70.0   0.017    0.13      0.09  1.0000
+emitter   100.0   0.048    0.63      0.32  1.0000
+emitter   130.0   0.044    0.47      0.26  1.0000
+emitter   160.0   0.053    0.51      0.29  1.0000

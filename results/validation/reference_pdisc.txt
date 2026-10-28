@@ -1,0 +1,5 @@
+Phyllostomus discolor: 141 frequencies 25.0-95.0 kHz, frontal hemisphere, patterns normalized per frequency and clipped at -30 dB
+source    corr median [p10, p90]    rms dB median [p10, p90]    peak error deg median [p10, p90]
+left       0.742 [ 0.611,  0.826]    6.029 [ 4.735,  6.926]   14.133 [ 7.500, 21.476]
+right      0.794 [ 0.716,  0.881]    5.702 [ 4.136,  7.695]   12.603 [ 4.924, 21.324]
+emitter    0.754 [ 0.637,  0.852]    5.779 [ 2.054,  6.900]   19.120 [11.706, 54.266]

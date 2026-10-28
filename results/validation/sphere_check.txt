@@ -1,0 +1,5 @@
+sphere a = 5.0 mm, 20480 faces, cap 130 faces, alpha = 9.15 deg
+   20 kHz (ka = 1.83): magnitude error max 0.06 dB, rms 0.03 dB; phase error max 1.4 deg, rms 0.9 deg
+   40 kHz (ka = 3.66): magnitude error max 0.09 dB, rms 0.04 dB; phase error max 2.6 deg, rms 1.8 deg
+   80 kHz (ka = 7.33): magnitude error max 0.15 dB, rms 0.05 dB; phase error max 5.2 deg, rms 3.6 deg
+  120 kHz (ka = 10.99): magnitude error max 0.21 dB, rms 0.08 dB; phase error max 7.6 deg, rms 5.2 deg

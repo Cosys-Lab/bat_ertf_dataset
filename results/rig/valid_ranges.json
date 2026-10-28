@@ -1,0 +1,2066 @@
+{
+ "pdisc": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      25.0
+     ],
+     "limit": [
+      "-35 deg: 20 self-intersecting faces, edge stretch 0.18-2.02",
+      "+30 deg: edge stretch 0.32-2.22"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -20.0,
+      20.0
+     ],
+     "limit": [
+      "-25 deg: 84 self-intersecting faces, 5 inverted faces",
+      "+25 deg: 20 self-intersecting faces, edge stretch 0.47-2.19"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -35.0,
+      25.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.40-2.02",
+      "+30 deg: edge stretch 0.36-2.07"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -20.0,
+      25.0
+     ],
+     "limit": [
+      "-25 deg: edge stretch 0.41-2.02",
+      "+30 deg: 34 self-intersecting faces, 1 inverted faces, edge stretch 0.23-1.78"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      40.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.21-1.67",
+      "+45 deg: edge stretch 0.49-2.10"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -15.0,
+      30.0
+     ],
+     "limit": [
+      "-20 deg: 2 self-intersecting faces",
+      "+35 deg: 9 self-intersecting faces, edge stretch 0.31-2.01"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -10.0,
+      45.0
+     ],
+     "limit": [
+      "-15 deg: 2 self-intersecting faces",
+      "+50 deg: edge stretch 0.38-2.09"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -35.0,
+      10.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.35-2.03",
+      "+15 deg: 2 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      50.0
+     ],
+     "limit": [
+      "",
+      "+55 deg: edge stretch 0.24-1.93"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      55.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.48-2.09",
+      "+60 deg: 1 inverted faces, edge stretch 0.21-1.95"
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -25.0,
+      20.0
+     ],
+     "limit": [
+      "-30 deg: 5 inverted faces",
+      "+25 deg: edge stretch 0.32-2.20"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -20.0,
+      20.0
+     ],
+     "limit": [
+      "-25 deg: 4 inverted faces",
+      "+25 deg: 36 self-intersecting faces, edge stretch 0.47-2.03"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      20.0
+     ],
+     "limit": [
+      "-35 deg: 3 self-intersecting faces, 3 inverted faces, edge stretch 0.24-2.13",
+      "+25 deg: edge stretch 0.49-2.03"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -20.0,
+      20.0
+     ],
+     "limit": [
+      "-25 deg: edge stretch 0.38-2.02",
+      "+25 deg: 1 inverted faces, edge stretch 0.24-1.66"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -25.0,
+      35.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.24-1.47",
+      "+40 deg: edge stretch 0.47-2.11"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.41-2.02",
+      "+35 deg: 24 self-intersecting faces"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      45.0
+     ],
+     "limit": [
+      "-55 deg: 31 self-intersecting faces",
+      "+50 deg: edge stretch 0.33-2.01"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.33-2.03",
+      "+40 deg: 28 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      50.0
+     ],
+     "limit": [
+      "",
+      "+55 deg: edge stretch 0.23-1.80"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "noseleaf.base": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -15.0,
+      20.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.24-1.70",
+      "+25 deg: edge stretch 0.18-2.03"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      35.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.59-2.19",
+      "+40 deg: 2 self-intersecting faces, 1 inverted faces, edge stretch 0.34-2.12"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.66-2.18",
+      "+35 deg: 1 inverted faces, edge stretch 0.57-2.16"
+     ]
+    }
+   },
+   "noseleaf.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -50.0,
+      45.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.39-2.02",
+      "+50 deg: edge stretch 0.23-1.58"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   }
+  }
+ },
+ "mmicr": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -25.0,
+      35.0
+     ],
+     "limit": [
+      "-30 deg: 88 self-intersecting faces",
+      "+40 deg: edge stretch 0.34-2.09"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -15.0,
+      15.0
+     ],
+     "limit": [
+      "-20 deg: 6 self-intersecting faces, 1 inverted faces, edge stretch 0.04-1.38",
+      "+20 deg: edge stretch 0.64-2.02"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      25.0
+     ],
+     "limit": [
+      "-35 deg: 1 inverted faces",
+      "+30 deg: edge stretch 0.55-2.03"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -15.0,
+      15.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.64-2.02",
+      "+20 deg: 6 self-intersecting faces, 3 inverted faces, edge stretch 0.04-1.38"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -35.0,
+      40.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.24-1.59",
+      "+45 deg: edge stretch 0.36-2.03"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      40.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.20-1.80",
+      "+45 deg: edge stretch 0.16-2.10"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      50.0
+     ],
+     "limit": [
+      "-50 deg: edge stretch 0.32-2.03",
+      "+55 deg: edge stretch 0.44-2.06"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.19-2.05",
+      "+40 deg: edge stretch 0.22-1.79"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -55.0,
+      50.0
+     ],
+     "limit": [
+      "-60 deg: 1 inverted faces",
+      "+55 deg: edge stretch 0.30-2.02"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -50.0,
+      40.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.35-2.09",
+      "+45 deg: edge stretch 0.19-1.60"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -40.0,
+      50.0
+     ],
+     "limit": [
+      "-45 deg: 13 self-intersecting faces",
+      "+55 deg: edge stretch 0.49-2.11"
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      40.0
+     ],
+     "limit": [
+      "-35 deg: 62 self-intersecting faces",
+      "+45 deg: edge stretch 0.34-2.09"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -15.0,
+      20.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.20-1.35",
+      "+25 deg: edge stretch 0.57-2.10"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: 2 inverted faces, edge stretch 0.20-1.73",
+      "+40 deg: edge stretch 0.44-2.12"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -20.0,
+      15.0
+     ],
+     "limit": [
+      "-25 deg: edge stretch 0.58-2.12",
+      "+20 deg: edge stretch 0.17-1.35"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -50.0,
+      60.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.24-1.74",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -45.0,
+      40.0
+     ],
+     "limit": [
+      "-50 deg: 40 self-intersecting faces",
+      "+45 deg: 30 self-intersecting faces, edge stretch 0.24-1.83"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      60.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.32-2.04",
+      ""
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      45.0
+     ],
+     "limit": [
+      "-45 deg: 27 self-intersecting faces, edge stretch 0.24-1.83",
+      "+50 deg: 58 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.18-2.06",
+      "+40 deg: edge stretch 0.19-1.78"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      55.0
+     ],
+     "limit": [
+      "-55 deg: 50 self-intersecting faces, edge stretch 0.52-2.00",
+      "+60 deg: edge stretch 0.45-2.09"
+     ]
+    }
+   },
+   "noseleaf.base": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -30.0,
+      25.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.22-1.92",
+      "+30 deg: edge stretch 0.25-1.84"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      50.0
+     ],
+     "limit": [
+      "-50 deg: edge stretch 0.71-2.01",
+      "+55 deg: edge stretch 0.54-2.04"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.19-1.92",
+      "+35 deg: edge stretch 0.18-1.94"
+     ]
+    }
+   },
+   "noseleaf.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   }
+  }
+ },
+ "mmacr": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      40.0
+     ],
+     "limit": [
+      "-45 deg: 15 self-intersecting faces",
+      "+45 deg: edge stretch 0.21-2.13"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -25.0,
+      30.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.12-1.70",
+      "+35 deg: edge stretch 0.28-2.11"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.21-1.52",
+      "+35 deg: edge stretch 0.57-2.00"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -25.0,
+      20.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.42-2.15",
+      "+25 deg: edge stretch 0.23-1.51"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      50.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.19-1.69",
+      "+55 deg: edge stretch 0.25-2.02"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -50.0,
+      40.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.25-2.10",
+      "+45 deg: edge stretch 0.17-1.61"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -45.0,
+      45.0
+     ],
+     "limit": [
+      "-50 deg: edge stretch 0.22-1.83",
+      "+50 deg: 39 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      40.0
+     ],
+     "limit": [
+      "-45 deg: 41 self-intersecting faces",
+      "+45 deg: edge stretch 0.21-2.07"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -20.0,
+      25.0
+     ],
+     "limit": [
+      "-25 deg: edge stretch 0.17-1.50",
+      "+30 deg: edge stretch 0.41-2.12"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: 19 self-intersecting faces",
+      "+40 deg: edge stretch 0.42-2.15"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -20.0,
+      15.0
+     ],
+     "limit": [
+      "-25 deg: edge stretch 0.60-2.01",
+      "+20 deg: edge stretch 0.23-1.32"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      50.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.17-1.65",
+      "+55 deg: edge stretch 0.24-2.07"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.28-2.05",
+      "+40 deg: edge stretch 0.23-1.68"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -55.0,
+      60.0
+     ],
+     "limit": [
+      "-60 deg: edge stretch 0.54-2.01",
+      ""
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -35.0,
+      40.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.21-1.76",
+      "+45 deg: 38 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "noseleaf.base": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -20.0,
+      15.0
+     ],
+     "limit": [
+      "-25 deg: 4 self-intersecting faces, edge stretch 0.30-2.06",
+      "+20 deg: edge stretch 0.24-1.62"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.61-2.13",
+      "+40 deg: edge stretch 0.56-2.13"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -25.0,
+      20.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.28-2.13",
+      "+25 deg: 1 inverted faces"
+     ]
+    }
+   },
+   "noseleaf.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   }
+  }
+ },
+ "rrouxi": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -35.0,
+      40.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.24-1.65",
+      "+45 deg: edge stretch 0.37-2.02"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: 286 self-intersecting faces, edge stretch 0.20-2.04",
+      "+35 deg: edge stretch 0.14-1.84"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      55.0
+     ],
+     "limit": [
+      "-55 deg: 20 self-intersecting faces",
+      "+60 deg: edge stretch 0.32-2.06"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.16-1.84",
+      "+35 deg: 59 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -55.0,
+      55.0
+     ],
+     "limit": [
+      "-60 deg: edge stretch 0.22-1.79",
+      "+60 deg: edge stretch 0.36-2.08"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -30.0,
+      25.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.22-2.03",
+      "+30 deg: edge stretch 0.16-1.84"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      50.0
+     ],
+     "limit": [
+      "-50 deg: edge stretch 0.34-2.04",
+      "+55 deg: edge stretch 0.25-2.10"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -25.0,
+      35.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.20-1.85",
+      "+40 deg: 55 self-intersecting faces, 2 inverted faces, edge stretch 0.21-2.13"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      40.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.25-1.87",
+      "+45 deg: edge stretch 0.19-1.85"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: 2 self-intersecting faces, 2 inverted faces, edge stretch 0.18-1.61",
+      "+35 deg: edge stretch 0.41-2.07"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      35.0
+     ],
+     "limit": [
+      "-40 deg: 112 self-intersecting faces, edge stretch 0.24-2.00",
+      "+40 deg: 50 self-intersecting faces, 3 inverted faces, edge stretch 0.20-1.90"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -35.0,
+      35.0
+     ],
+     "limit": [
+      "-40 deg: 1 inverted faces, edge stretch 0.34-2.00",
+      "+40 deg: edge stretch 0.24-2.16"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -30.0,
+      35.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.17-1.79",
+      "+40 deg: 155 self-intersecting faces, edge stretch 0.20-2.05"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -50.0,
+      45.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.18-1.80",
+      "+50 deg: edge stretch 0.47-2.00"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: 3 self-intersecting faces, edge stretch 0.19-1.82",
+      "+35 deg: edge stretch 0.25-2.02"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      50.0
+     ],
+     "limit": [
+      "-50 deg: edge stretch 0.19-1.89",
+      "+55 deg: edge stretch 0.43-2.04"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.27-2.07",
+      "+35 deg: 3 self-intersecting faces, 2 inverted faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -50.0,
+      45.0
+     ],
+     "limit": [
+      "-55 deg: 2 self-intersecting faces, edge stretch 0.23-2.00",
+      "+50 deg: edge stretch 0.23-1.86"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "noseleaf.base": {
+    "flex": {
+     "range_deg": [
+      -25.0,
+      35.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.22-1.47",
+      "+40 deg: edge stretch 0.40-2.04"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: 23 self-intersecting faces, 5 inverted faces, edge stretch 0.22-2.02",
+      "+35 deg: 8 self-intersecting faces, edge stretch 0.20-1.94"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      45.0
+     ],
+     "limit": [
+      "-50 deg: edge stretch 0.29-2.01",
+      "+50 deg: 10 self-intersecting faces, edge stretch 0.36-2.07"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: 3 inverted faces, edge stretch 0.23-1.99",
+      "+40 deg: edge stretch 0.24-2.01"
+     ]
+    }
+   },
+   "noseleaf.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -55.0,
+      50.0
+     ],
+     "limit": [
+      "-60 deg: edge stretch 0.43-2.05",
+      "+55 deg: 4 self-intersecting faces, 1 inverted faces, edge stretch 0.24-1.58"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      60.0
+     ],
+     "limit": [
+      "-50 deg: 7 self-intersecting faces",
+      ""
+     ]
+    }
+   }
+  }
+ },
+ "rform": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -20.0,
+      25.0
+     ],
+     "limit": [
+      "-25 deg: 32 self-intersecting faces, edge stretch 0.17-1.80",
+      "+30 deg: edge stretch 0.16-2.18"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -20.0,
+      20.0
+     ],
+     "limit": [
+      "-25 deg: 193 self-intersecting faces, 2 inverted faces",
+      "+25 deg: 1 inverted faces, edge stretch 0.17-2.21"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -20.0,
+      15.0
+     ],
+     "limit": [
+      "-25 deg: edge stretch 0.49-2.15",
+      "+20 deg: edge stretch 0.52-2.01"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -15.0,
+      15.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.24-2.17",
+      "+20 deg: 55 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -35.0,
+      40.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.23-1.65",
+      "+45 deg: edge stretch 0.33-2.00"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: 56 self-intersecting faces, 2 inverted faces",
+      "+35 deg: edge stretch 0.24-1.85"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -45.0,
+      40.0
+     ],
+     "limit": [
+      "-50 deg: 12 self-intersecting faces, edge stretch 0.32-2.05",
+      "+45 deg: edge stretch 0.27-2.04"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -30.0,
+      25.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.16-1.93",
+      "+30 deg: 16 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -25.0,
+      35.0
+     ],
+     "limit": [
+      "-30 deg: 1 inverted faces, edge stretch 0.23-1.24",
+      "+40 deg: edge stretch 0.86-2.14"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -50.0,
+      40.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.35-2.01",
+      "+45 deg: 1 inverted faces"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -25.0,
+      30.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.17-1.80",
+      "+35 deg: edge stretch 0.41-2.08"
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -20.0,
+      25.0
+     ],
+     "limit": [
+      "-25 deg: 14 self-intersecting faces, edge stretch 0.22-1.70",
+      "+30 deg: edge stretch 0.28-2.13"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -10.0,
+      20.0
+     ],
+     "limit": [
+      "-15 deg: 80 self-intersecting faces",
+      "+25 deg: edge stretch 0.13-2.18"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -25.0,
+      20.0
+     ],
+     "limit": [
+      "-30 deg: 22 self-intersecting faces, 2 inverted faces, edge stretch 0.40-2.13",
+      "+25 deg: edge stretch 0.48-2.18"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -15.0,
+      10.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.25-2.12",
+      "+15 deg: 88 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: 1 inverted faces, edge stretch 0.24-1.69",
+      "+40 deg: edge stretch 0.44-2.02"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -30.0,
+      35.0
+     ],
+     "limit": [
+      "-35 deg: 25 self-intersecting faces",
+      "+40 deg: edge stretch 0.19-1.98"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      40.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.30-2.01",
+      "+45 deg: edge stretch 0.28-2.03"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.20-2.01",
+      "+35 deg: 45 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: 25 self-intersecting faces",
+      "+35 deg: edge stretch 0.80-2.03"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      35.0
+     ],
+     "limit": [
+      "-40 deg: 2 inverted faces",
+      "+40 deg: edge stretch 0.31-2.02"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -35.0,
+      35.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.30-2.06",
+      "+40 deg: edge stretch 0.47-2.08"
+     ]
+    }
+   },
+   "noseleaf.base": {
+    "flex": {
+     "range_deg": [
+      -15.0,
+      10.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.58-2.34",
+      "+15 deg: edge stretch 0.67-2.11"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -5.0,
+      5.0
+     ],
+     "limit": [
+      "-10 deg: 3 inverted faces, edge stretch 0.21-1.40",
+      "+10 deg: edge stretch 0.64-2.02"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.40-2.18",
+      "+35 deg: edge stretch 0.35-2.17"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -20.0,
+      20.0
+     ],
+     "limit": [
+      "-25 deg: 4 inverted faces, edge stretch 0.23-1.78",
+      "+25 deg: edge stretch 0.44-2.02"
+     ]
+    }
+   },
+   "noseleaf.distal": {
+    "flex": {
+     "range_deg": [
+      -25.0,
+      25.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.52-2.00",
+      "+30 deg: edge stretch 0.16-2.10"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -15.0,
+      15.0
+     ],
+     "limit": [
+      "-20 deg: edge stretch 0.27-2.05",
+      "+20 deg: 5 inverted faces, edge stretch 0.19-1.78"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -35.0,
+      40.0
+     ],
+     "limit": [
+      "-40 deg: 2 inverted faces",
+      "+45 deg: edge stretch 0.34-2.11"
+     ]
+    }
+   }
+  }
+ },
+ "efusc": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: 67 self-intersecting faces, 5 inverted faces, edge stretch 0.22-1.82",
+      "+35 deg: edge stretch 0.26-2.11"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.15-1.87",
+      "+35 deg: edge stretch 0.19-1.96"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.16-1.71",
+      "+35 deg: edge stretch 0.45-2.04"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -30.0,
+      25.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.29-2.13",
+      "+30 deg: 21 self-intersecting faces, edge stretch 0.13-1.63"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      40.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.25-1.68",
+      "+45 deg: edge stretch 0.20-2.09"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      30.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.35-2.09",
+      "+35 deg: edge stretch 0.17-1.51"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -30.0,
+      45.0
+     ],
+     "limit": [
+      "-35 deg: 39 self-intersecting faces",
+      "+50 deg: edge stretch 0.25-2.00"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -35.0,
+      25.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.25-1.84",
+      "+30 deg: 32 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -50.0,
+      55.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.24-1.72",
+      "+60 deg: edge stretch 0.31-2.02"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      30.0
+     ],
+     "limit": [
+      "-35 deg: 20 self-intersecting faces, 3 inverted faces",
+      "+35 deg: edge stretch 0.28-2.18"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      30.0
+     ],
+     "limit": [
+      "-40 deg: 2 inverted faces, edge stretch 0.36-2.08",
+      "+35 deg: edge stretch 0.22-1.93"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -25.0,
+      30.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.24-1.60",
+      "+35 deg: edge stretch 0.42-2.10"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -25.0,
+      25.0
+     ],
+     "limit": [
+      "-30 deg: edge stretch 0.40-2.12",
+      "+30 deg: 20 self-intersecting faces, 2 inverted faces, edge stretch 0.17-1.66"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      40.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.18-1.61",
+      "+45 deg: edge stretch 0.29-2.10"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      30.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.53-2.08",
+      "+35 deg: edge stretch 0.23-1.42"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -25.0,
+      40.0
+     ],
+     "limit": [
+      "-30 deg: 31 self-intersecting faces",
+      "+45 deg: edge stretch 0.33-2.02"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      25.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.22-2.13",
+      "+30 deg: 58 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      50.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.21-1.73",
+      "+55 deg: edge stretch 0.21-2.07"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   }
+  }
+ },
+ "mdaub": {
+  "step_deg": 5.0,
+  "max_deg": 60.0,
+  "stretch_limits": [
+   0.25,
+   2.0
+  ],
+  "joints": {
+   "pinna_left.base": {
+    "flex": {
+     "range_deg": [
+      -50.0,
+      40.0
+     ],
+     "limit": [
+      "-55 deg: 13 self-intersecting faces",
+      "+45 deg: edge stretch 0.25-1.81"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -45.0,
+      40.0
+     ],
+     "limit": [
+      "-50 deg: 59 self-intersecting faces",
+      "+45 deg: edge stretch 0.21-1.75"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      55.0
+     ],
+     "limit": [
+      "-55 deg: 1 inverted faces",
+      "+60 deg: edge stretch 0.37-2.05"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.44-2.02",
+      "+40 deg: 55 self-intersecting faces, edge stretch 0.21-1.50"
+     ]
+    }
+   },
+   "pinna_left.mid": {
+    "flex": {
+     "range_deg": [
+      -30.0,
+      40.0
+     ],
+     "limit": [
+      "-35 deg: edge stretch 0.18-1.52",
+      "+45 deg: edge stretch 0.42-2.06"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      35.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.23-2.02",
+      "+40 deg: edge stretch 0.22-1.71"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -50.0,
+      50.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.53-2.00",
+      "+55 deg: edge stretch 0.43-2.08"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      40.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.21-2.06",
+      "+45 deg: 1 inverted faces"
+     ]
+    }
+   },
+   "pinna_left.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   },
+   "pinna_right.base": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      50.0
+     ],
+     "limit": [
+      "",
+      "+55 deg: edge stretch 0.23-1.83"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -40.0,
+      45.0
+     ],
+     "limit": [
+      "-45 deg: 35 self-intersecting faces",
+      "+50 deg: edge stretch 0.20-1.82"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -35.0,
+      55.0
+     ],
+     "limit": [
+      "-40 deg: 24 self-intersecting faces",
+      "+60 deg: edge stretch 0.42-2.01"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -50.0,
+      35.0
+     ],
+     "limit": [
+      "-55 deg: edge stretch 0.31-2.09",
+      "+40 deg: 51 self-intersecting faces"
+     ]
+    }
+   },
+   "pinna_right.mid": {
+    "flex": {
+     "range_deg": [
+      -40.0,
+      45.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.23-1.65",
+      "+50 deg: edge stretch 0.37-2.03"
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -35.0,
+      45.0
+     ],
+     "limit": [
+      "-40 deg: edge stretch 0.22-1.75",
+      "+50 deg: edge stretch 0.21-2.00"
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      55.0
+     ],
+     "limit": [
+      "",
+      "+60 deg: edge stretch 0.38-2.07"
+     ]
+    },
+    "yaw": {
+     "range_deg": [
+      -40.0,
+      45.0
+     ],
+     "limit": [
+      "-45 deg: edge stretch 0.23-2.06",
+      "+50 deg: 3 self-intersecting faces, 8 inverted faces"
+     ]
+    }
+   },
+   "pinna_right.distal": {
+    "flex": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "abduct": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    },
+    "twist": {
+     "range_deg": [
+      -60.0,
+      60.0
+     ],
+     "limit": [
+      "",
+      ""
+     ]
+    }
+   }
+  }
+ }
+}

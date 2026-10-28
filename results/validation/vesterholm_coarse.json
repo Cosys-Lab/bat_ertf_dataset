@@ -1,0 +1,251 @@
+{
+ "what": "Validation against Vesterholm et al. 2025, M. daubentonii Mdau2 (left ear): measured in-ear HRTF magnitude and their Mesh2HRTF simulation; docs/vesterholm_validation.md",
+ "run": "COARSE TEST (mesh <= 20k faces, 4 frequencies)",
+ "git": "91c975c",
+ "source": {
+  "zenodo": "10.5281/zenodo.15789942",
+  "paper": "10.1111/2041-210X.70197",
+  "licence": "CC-BY-4.0",
+  "sofa_attributes": {
+   "SOFAConventions": "GeneralTF",
+   "ApplicationName": "Mesh2HRTF",
+   "ApplicationVersion": "1.1.1",
+   "Comment": "CT_Mdau03",
+   "License": "No license provided, ask the author for permission",
+   "DateCreated": "2024-06-13 15:22:37"
+  }
+ },
+ "mesh": {
+  "source": "Mdau2_CTscan.ply",
+  "n_faces_source": 24406,
+  "n_faces": 19854,
+  "target_edge_mm": 0.37966110006388687,
+  "edge_mm_mean_min_max": [
+   0.34687817527918263,
+   0.02150563193882057,
+   0.6580721404104763
+  ],
+  "f_max_6_per_wavelength_khz": 164.80329620235244,
+  "area_mm2": 1046.816941196912,
+  "area_source_mm2": 1049.2981076312626,
+  "volume_mm3": 1357.499090151047,
+  "deviation_to_source_mm_median_p95_max": [
+   0.047900832345172915,
+   0.13344219305285066,
+   0.276943917784283
+  ]
+ },
+ "receiver_m": [
+  -0.004938239812850952,
+  0.003445846915245056,
+  -0.0021803274154663086
+ ],
+ "patch": {
+  "radius_m": 0.0004,
+  "n_faces": 18,
+  "area_mm2": 0.5078124789250922,
+  "centroid_offset_mm": 0.13999681415758122
+ },
+ "rotation_meas_to_mesh": [
+  [
+   0.953762,
+   0.0676507,
+   -0.292849
+  ],
+  [
+   0.0778174,
+   0.885537,
+   0.458005
+  ],
+  [
+   0.290313,
+   -0.459617,
+   0.839327
+  ]
+ ],
+ "rotation_angle_deg": 32.93235493378216,
+ "n_measured_directions": 1009,
+ "floor_db": -30.0,
+ "phase_mask_db": -20.0,
+ "freqs_khz": [
+  30.0,
+  50.0,
+  70.0,
+  90.0
+ ],
+ "m2h_available": [
+  true,
+  true,
+  true,
+  true
+ ],
+ "per_frequency": {
+  "ours_vs_measured": {
+   "rms_db": [
+    4.30592,
+    5.40867,
+    6.60676,
+    7.2211
+   ],
+   "corr": [
+    0.74056,
+    0.7319,
+    0.68694,
+    0.55672
+   ],
+   "peak_deg": [
+    34.3679,
+    22.26874,
+    22.26874,
+    22.33791
+   ]
+  },
+  "ours_vs_measured_without_rotation": {
+   "rms_db": [
+    4.32593,
+    5.83352,
+    6.95545,
+    7.00189
+   ],
+   "corr": [
+    0.73767,
+    0.68047,
+    0.64889,
+    0.5855
+   ],
+   "peak_deg": [
+    22.06845,
+    19.6931,
+    22.26874,
+    14.10604
+   ]
+  },
+  "m2h_vs_measured": {
+   "rms_db": [
+    4.26667,
+    5.50781,
+    6.67386,
+    7.12949
+   ],
+   "corr": [
+    0.74642,
+    0.72153,
+    0.67485,
+    0.56112
+   ],
+   "peak_deg": [
+    34.3679,
+    22.26874,
+    22.26874,
+    22.33791
+   ]
+  },
+  "ours_vs_m2h": {
+   "rms_db": [
+    0.43088,
+    0.61165,
+    1.19242,
+    1.38915
+   ],
+   "corr": [
+    0.99731,
+    0.99703,
+    0.98916,
+    0.98217
+   ],
+   "peak_deg": [
+    1.56667,
+    2.55904,
+    1.80881,
+    0.0
+   ],
+   "level_offset_db": [
+    -0.97885,
+    -0.96422,
+    -1.44997,
+    -0.62649
+   ],
+   "complex_corr": [
+    0.03476,
+    0.01342,
+    0.02137,
+    0.02183
+   ],
+   "complex_corr_conj": [
+    0.99911,
+    0.9985,
+    0.99687,
+    0.99276
+   ],
+   "phase_rms_deg": [
+    100.15859,
+    102.15376,
+    105.21639,
+    104.0616
+   ],
+   "phase_rms_deg_conj": [
+    2.88358,
+    4.89333,
+    5.35282,
+    7.30046
+   ]
+  }
+ },
+ "summary": {
+  "ours_vs_measured": {
+   "n_freqs": 4,
+   "corr_mean": 0.6790310488847102,
+   "corr_median": 0.7094234749484805,
+   "corr_min": 0.5567213761595866,
+   "rms_db_mean": 5.885612667628325,
+   "rms_db_median": 6.007713510122957
+  },
+  "ours_vs_measured_without_rotation": {
+   "n_freqs": 4,
+   "corr_mean": 0.663130918699351,
+   "corr_median": 0.6646800174393923,
+   "corr_min": 0.5854973428186245,
+   "rms_db_mean": 6.029197952369056,
+   "rms_db_median": 6.394483133027146
+  },
+  "m2h_vs_measured": {
+   "n_freqs": 4,
+   "corr_mean": 0.6759825559630275,
+   "corr_median": 0.6981945934198486,
+   "corr_min": 0.5611219599216204,
+   "rms_db_mean": 5.8944580731675735,
+   "rms_db_median": 6.09083532025584
+  },
+  "ours_vs_m2h": {
+   "n_freqs": 4,
+   "corr_mean": 0.9914182857752508,
+   "corr_median": 0.9930947026768965,
+   "corr_min": 0.9821749403100631,
+   "rms_db_mean": 0.9060273139811306,
+   "rms_db_median": 0.9020381774289015,
+   "level_offset_db_median": -0.9715374314780432,
+   "complex_corr_median": 0.021600178981910037,
+   "complex_corr_conj_median": 0.9976877547427159,
+   "phase_rms_deg_median": 103.10767824850767,
+   "phase_rms_deg_conj_median": 5.12307239453871
+  }
+ },
+ "broadband": {
+  "ours_vs_measured": {
+   "rms_db": 3.1286141948463437,
+   "corr": 0.8712333068134211,
+   "peak_deg": 28.212088521132735
+  },
+  "m2h_vs_measured": {
+   "rms_db": 3.081927016422902,
+   "corr": 0.8677868748597248,
+   "peak_deg": 28.212088521132735
+  },
+  "ours_vs_m2h": {
+   "rms_db": 0.3320678957747319,
+   "corr": 0.9988279744163691,
+   "peak_deg": 0.0
+  }
+ },
+ "m2h_phase_convention_match": "conj"
+}
