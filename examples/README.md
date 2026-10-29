@@ -8,7 +8,7 @@ package they are in `code/`; on GitHub in `batertf/` and `examples/`.
 
 | | |
 |---|---|
-| Frame | X forward (snout), Y left, Z up, metres; origin = centre of the evaluation sphere. `mesh_ct.stl` is the head in exactly these coordinates. |
+| Frame | X forward (snout), Y left, Z up, metres; origin = centre of the evaluation sphere. `mesh.stl` is the head in exactly these coordinates. |
 | Directions | azimuth positive to the bat's **left**, elevation positive up; u = [cos(el) cos(az), cos(el) sin(az), sin(el)]. Grid: az -180..177.5, el -90..90, 2.5 deg; arrays `[el, az, freq]` (MATLAB after `loadBatERTF`: same). |
 | Referencing | H = p / p_ff at 1 m, p_ff = free-field pressure of a monopole **at the origin** with the source's volume velocity. The 1 m propagation delay and 1/r spreading are therefore not in H; only the head is. |
 | Time convention | exp(+j w t): a delay tau multiplies H by exp(-j w tau). The inverse real FFT (`numpy.fft.irfft`, MATLAB `ifft(..., 'symmetric')`) gives the impulse response. (The solver works in exp(-j w t); the stored data are conjugated. In the exp(+j w t) convention the reference monopole is p_ff = j w rho Q exp(-j k r) / (4 pi r).) |

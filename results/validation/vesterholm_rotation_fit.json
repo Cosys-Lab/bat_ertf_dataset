@@ -1,0 +1,151 @@
+{
+ "what": "Is the remaining difference between the measured and the simulated HRTF of Vesterholm's Mdau2 a registration",
+ "freqs_khz": [
+  25.0,
+  27.5,
+  30.0,
+  32.5,
+  35.0,
+  37.5,
+  40.0,
+  42.5,
+  45.0,
+  47.5,
+  50.0,
+  52.5,
+  55.0,
+  57.5,
+  60.0,
+  62.5,
+  65.0,
+  67.5,
+  70.0,
+  72.5,
+  75.0,
+  77.5,
+  80.0,
+  82.5,
+  85.0,
+  87.5,
+  90.0,
+  92.5,
+  95.0,
+  97.5,
+  100.0
+ ],
+ "ours": {
+  "fit_freqs": {
+   "corr_median_their_rotation": 0.6977649074819465,
+   "corr_median_fitted": 0.8096704415341458,
+   "rms_db_median_their_rotation": 6.1288061167883185,
+   "rms_db_median_fitted": 4.861935182867374,
+   "peak_deg_median_their_rotation": 23.646012938471024,
+   "peak_deg_median_fitted": 12.629802589309206
+  },
+  "test_freqs": {
+   "corr_median_their_rotation": 0.7120741368109363,
+   "corr_median_fitted": 0.8156864346634857,
+   "rms_db_median_their_rotation": 5.812302572739537,
+   "rms_db_median_fitted": 4.701474387371197,
+   "peak_deg_median_their_rotation": 24.61419429099348,
+   "peak_deg_median_fitted": 11.168952812354922
+  },
+  "all": {
+   "corr_median_their_rotation": 0.7048830114986698,
+   "corr_median_fitted": 0.8156864346634857,
+   "rms_db_median_their_rotation": 5.97545421851713,
+   "rms_db_median_fitted": 4.701474387371197,
+   "peak_deg_median_their_rotation": 24.61419429099348,
+   "peak_deg_median_fitted": 11.168952812354954
+  },
+  "extra_rotation_deg": 25.732412664080062,
+  "extra_rotation_euler_zyx_deg": [
+   18.605580885850372,
+   18.03843326593092,
+   -1.483806527664424
+  ],
+  "per_frequency_corr_fitted": [
+   0.8371173921798192,
+   0.8264347614913621,
+   0.8461320511733899,
+   0.8770706652113182,
+   0.877869194215932,
+   0.8803202101108577,
+   0.8032754284099286,
+   0.8156864346634857,
+   0.7305911365782802,
+   0.7621220119792581,
+   0.7652523440951596,
+   0.796901014241908,
+   0.8193975074396428,
+   0.8595372326716898,
+   0.8431195293750339,
+   0.8224516996588761,
+   0.8377506107422585,
+   0.8162643316341537,
+   0.7779271107106277,
+   0.7828480096274905,
+   0.8160654546583631,
+   0.8724771166352985,
+   0.8667127930556776,
+   0.7840816485346438,
+   0.7060018148927114,
+   0.65588779696146,
+   0.6010351856985079,
+   0.6065930403923331,
+   0.5843923973428032,
+   0.5965974759377152,
+   0.6245053486724308
+  ]
+ },
+ "mesh2hrtf": {
+  "fit_freqs": {
+   "corr_median_their_rotation": 0.693730410863297,
+   "corr_median_fitted": 0.8125904426948032,
+   "rms_db_median_their_rotation": 6.251646912675534,
+   "rms_db_median_fitted": 5.041474038124372,
+   "peak_deg_median_their_rotation": 26.58310438668247,
+   "peak_deg_median_fitted": 12.62980258930919
+  },
+  "test_freqs": {
+   "corr_median_their_rotation": 0.7041412850727637,
+   "corr_median_fitted": 0.789623640962456,
+   "rms_db_median_their_rotation": 5.99148957690095,
+   "rms_db_median_fitted": 4.863326248904832,
+   "peak_deg_median_their_rotation": 22.303325060003367,
+   "peak_deg_median_fitted": 11.168952812354938
+  },
+  "all": {
+   "corr_median_their_rotation": 0.693730410863297,
+   "corr_median_fitted": 0.8052216257104062,
+   "rms_db_median_their_rotation": 6.213674532795761,
+   "rms_db_median_fitted": 4.867711500388064,
+   "peak_deg_median_their_rotation": 23.646012938471024,
+   "peak_deg_median_fitted": 11.168952812354938
+  },
+  "extra_rotation_deg": 26.833258065287303,
+  "extra_rotation_euler_zyx_deg": [
+   19.266521220478346,
+   18.95233288249332,
+   -1.3920734955109335
+  ],
+  "per_frequency_corr_fitted": [
+   0.8334076170130607,
+   0.840684682940334,
+   0.8767584346634768,
+   0.8016592880547815,
+   0.7358504064704955,
+   0.7699491605426029,
+   0.808783963366031,
+   0.8438614395790208,
+   0.8350436647916737,
+   0.7775879938701304,
+   0.8163969220235754,
+   0.876318146832785,
+   0.7201233292828151,
+   0.6181621076162844,
+   0.5920109716827349,
+   0.6181466549225293
+  ]
+ }
+}

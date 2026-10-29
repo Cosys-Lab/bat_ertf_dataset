@@ -27,6 +27,19 @@ C = 343.0
 SOURCES = {"pdisc": "phyllo.stl", "mmicr": "micro High Res.stl", "mmacr": "macro.stl", "rrouxi": "rouxi.stl",
            "rform": "formosae.stl", "efusc": "eptesicus.stl", "mdaub": "myotis.stl"}
 CT_TO_FRAME = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]], float)      # rows: frame X, Y, Z in CT coordinates
+# head pose after the CT frame (v_new = v @ M): P. discolor in the pose of De Mey et al. 2008 (scripts/rotate_pdisc_pose.py)
+POSE = {"pdisc": np.array([[0.84626, 0.221636, -0.48448], [-0.138887, 0.969694, 0.201008], [0.514347, -0.102818, 0.851396]])}
+
+
+def to_frame(m, key):
+    """CT scan (mm) -> dataset frame (m), including the head pose of the species."""
+    m.apply_scale(1e-3)
+    T = np.eye(4)
+    T[:3, :3] = CT_TO_FRAME
+    m.apply_transform(T)
+    if key in POSE:
+        m.vertices = m.vertices @ POSE[key]
+    return m
 
 
 def remesh(src, L_mm):
@@ -140,11 +153,12 @@ def main():
         if not clean:
             print(f"{key}: NOT CLEAN after repair, not written to the dataset", flush=True)
             continue
-        m.apply_scale(1e-3)
+        to_frame(m, key)
         T = np.eye(4)
         T[:3, :3] = CT_TO_FRAME
-        m.apply_transform(T)
         ct.apply_transform(T)
+        if key in POSE:
+            ct.vertices = ct.vertices @ POSE[key]
         assert m.is_watertight and m.is_winding_consistent, key
         if m.volume < 0:
             m.invert()

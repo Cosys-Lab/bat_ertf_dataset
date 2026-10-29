@@ -43,7 +43,7 @@ def build(key, frame):
                "right": [sources.disc_patch(m, np.array(lm["ear_right"]), project.EAR_RADIUS)]}
     if sp["emitter"] == "nasal":
         patches["emitter"] = [sources.disc_patch(m, np.array(p), project.NOSTRIL_RADIUS) for p in lm["nostrils"]]
-    for name, alts in ensemble(key, lm).items():         # placement ensemble (docs/placement_rule.md)
+    for name, alts in ensemble(key, sp["landmarks"]).items():   # placement ensemble (CT frame, docs/placement_rule.md)
         for i, a in enumerate(alts):
             a = np.asarray(a) @ R
             r = project.NOSTRIL_RADIUS if name == "emitter" else project.EAR_RADIUS

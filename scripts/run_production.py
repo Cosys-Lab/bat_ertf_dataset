@@ -18,7 +18,7 @@ STRIDES = [8, 4, 2, 1]      # every 8th frequency (4 kHz) for all species first,
 PRE = [("results/placement/rform_rule.json", ["scripts/apply_placement_rule.py", "rform"]),
        ("results/validation/gpubem_vs_numcalc_ct_mmicr.txt", ["tests/gpubem_vs_numcalc_ct.py", "mmicr", "--gpu"])]
 RUNS = [("mmicr", "ct", None), ("pdisc", "ct", None), ("mmacr", "ct", None), ("rrouxi", "ct", None),
-        ("rform", "ct", None), ("efusc", "ct", None), ("mdaub", "ct", None), ("pdisc", "reference", ["25", "95", "0.5"])]
+        ("rform", "ct", None), ("efusc", "ct", None), ("mdaub", "ct", None)]   # pdisc: its ct frame is the pose of De Mey et al. (scripts/rotate_pdisc_pose.py)
 
 
 def busy():

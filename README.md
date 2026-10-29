@@ -23,6 +23,8 @@ This repository contains everything that produced the dataset, and the tools to 
 | `results/` | rigs, placement and validation results that the scripts read |
 | `docs/` | technical notes (solver, meshes, placement rule, rigging, calibration, validation) |
 
+A video of the dataset: https://youtu.be/Q9Kxj9oIEwg
+
 ## Quick start: use the data
 
 Download a species folder from Zenodo (one zip per species), then:

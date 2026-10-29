@@ -3,25 +3,25 @@
 # emitter: "nasal" (two nostrils, BEM) or "oral" (analytical piston at the mouth, radius calibrated to the literature).
 # Earlier working-frame configuration (remeshed meshes): /data/BatERTF/work/species_working_frame.toml
 
-[species.pdisc]
+[species.pdisc]   # head in the pose of De Mey et al. 2008, about 33 deg from the CT scan (scripts/rotate_pdisc_pose.py)
 name = "Phyllostomus discolor"
 stl = "../dataset/Phyllostomus_discolor.stl"
 family = "Phyllostomidae"
 emitter = "nasal"
 band_khz = [20, 145, 0.5]   # dataset band, 0.5 kHz steps; upper limit 160 kHz or six mean-size elements per wavelength
 reference = "HRTF_Phyllostomus_Discolor.mat"
-nose_centre = [1.777706e-02, -2.541164e-03, -4.625494e-03]   # search centre for nostril candidates
+nose_centre = [1.301784e-02, 1.951469e-03, -1.306155e-02]   # search centre for nostril candidates
 
 [species.pdisc.landmarks]   # best match to the reference ERTFs (scripts/placement_study.py; corr L/R/E 0.78/0.83/0.81)
-ear_left = [-7.318809e-03, 8.296045e-03, -7.634234e-03]
-ear_right = [-8.622555e-03, -8.623734e-03, -8.066027e-03]
-nostrils = [[1.688788e-02, -2.450868e-03, -3.298125e-03], [1.709738e-02, -5.118889e-04, -3.594947e-03]]
+ear_left = [-1.127247e-02, 7.207450e-03, -1.286368e-03]
+ear_right = [-1.024794e-02, -9.444119e-03, -4.423367e-03]
+nostrils = [[1.293555e-02, 1.705477e-03, -1.148249e-02], [1.269087e-02, 3.662645e-03, -1.144696e-02]]
 
 [species.pdisc.frames.ct]
 rotation = [0.0, 0.0, 0.0]
 
-[species.pdisc.frames.reference]   # De Mey et al. 2008 frame: fitted, scripts/placement_study.py refit
-matrix = [[0.84626, 0.221636, -0.48448], [-0.138887, 0.969694, 0.201008], [0.514347, -0.102818, 0.851396]]
+[species.pdisc.frames.reference]   # = the dataset frame: the mesh is in the pose of De Mey et al. 2008 (scripts/rotate_pdisc_pose.py)
+rotation = [0.0, 0.0, 0.0]
 
 [species.mmicr]
 name = "Micronycteris microtus"   # spelling of the mesh files, kept for traceability
@@ -84,7 +84,7 @@ nose_centre = [5.137321e-03, -5.379538e-04, -1.042066e-02]   # search centre for
 [species.rform.landmarks]   # placement rule learned on pdisc/mmicr (scripts/apply_placement_rule.py)
 ear_left = [-6.676033e-03, 8.293529e-03, 1.360322e-03]
 ear_right = [-3.695800e-03, -6.936300e-03, 1.409400e-03]
-nostrils = [[4.390100e-03, 1.661200e-03, -1.069110e-02], [4.395530e-03, -2.819028e-04, -1.025522e-02]]
+nostrils = [[3.163351e-03, -5.003253e-04, -1.218633e-02], [3.197150e-03, 1.448000e-03, -1.230052e-02]]   # second choice of the rule: in the nostril openings, single main lobe as Vanderelst et al. 2013 (first choice, now emitter_alt1: [4.390100e-03, 1.661200e-03, -1.069110e-02], [4.395530e-03, -2.819028e-04, -1.025522e-02])
 
 [species.rform.frames.ct]
 rotation = [0.0, 0.0, 0.0]
@@ -98,8 +98,8 @@ band_khz = [20, 160, 0.5]   # dataset band, 0.5 kHz steps; upper limit 160 kHz o
 mouth = [1.145854e-02, -4.154834e-04, -5.030461e-03]   # lip seam, midline (picked on the earlier mesh, carried over)
 piston_radius_m = 0.00659
 piston_calibration = "field: 30 deg half-amplitude angle at 35 kHz (Hulgard et al. 2016)"
-piston_alternatives_m = [0.00367]   # emitter_alt1: wide beam, calibrated radius scaled by the M. daubentonii ratio 3.5/6.28
-piston_alternatives_note = ["wide (confined-space) beam: not calibrated for this species; radius scaled by the ratio of the in-flight (Hafele et al. 2026) to the field radius found for M. daubentonii"]
+piston_alternatives_m = [0.0025, 0.0035, 0.0045, 0.0055, 0.0065]   # emitter_alt1..5: the piston for other behaviours (parametric emitter)
+piston_alternatives_note = ["2.5 mm: wider than any measured beam (close range)", "3.5 mm: laboratory and wind-tunnel beams (M. daubentonii: 3.1 mm laboratory, Surlykke et al. 2009; 3.5 mm in flight, Hafele et al. 2026)", "4.5 mm: intermediate (E. fuscus laboratory beam: 4.7 mm, Hartley and Suthers 1989)", "5.5 mm: intermediate", "6.5 mm: open-field search beam (calibrated radii 6.28 and 6.59 mm)"]
 
 [species.efusc.landmarks]   # placement rule learned on pdisc/mmicr (scripts/apply_placement_rule.py)
 ear_left = [-4.517900e-03, 5.739500e-03, -6.899500e-03]
@@ -118,8 +118,8 @@ band_khz = [20, 160, 0.5]   # dataset band, 0.5 kHz steps; upper limit 160 kHz o
 mouth = [7.738810e-03, 7.580116e-04, -4.820296e-03]   # lip seam, midline (picked on the earlier mesh, carried over)
 piston_radius_m = 0.00628
 piston_calibration = "field: Surlykke et al. 2009 Table 1, 45-75 kHz, rms error 0.4 deg"
-piston_alternatives_m = [0.0035]    # emitter_alt1: wide beam, fitted to the in-flight (wind tunnel) beam, 45-75 kHz
-piston_alternatives_note = ["wide (confined-space) beam: half-amplitude angle of the in-flight beam of Hafele et al. 2026 (wind tunnel), 45-75 kHz; laboratory beam of Surlykke et al. 2009: 3.13 mm"]
+piston_alternatives_m = [0.0025, 0.0035, 0.0045, 0.0055, 0.0065]   # emitter_alt1..5: the piston for other behaviours (parametric emitter)
+piston_alternatives_note = ["2.5 mm: wider than any measured beam (close range)", "3.5 mm: laboratory and wind-tunnel beams (M. daubentonii: 3.1 mm laboratory, Surlykke et al. 2009; 3.5 mm in flight, Hafele et al. 2026)", "4.5 mm: intermediate (E. fuscus laboratory beam: 4.7 mm, Hartley and Suthers 1989)", "5.5 mm: intermediate", "6.5 mm: open-field search beam (calibrated radii 6.28 and 6.59 mm)"]
 
 [species.mdaub.landmarks]   # placement rule learned on pdisc/mmicr (scripts/apply_placement_rule.py)
 ear_left = [-3.492300e-03, 3.643650e-03, -1.541150e-03]

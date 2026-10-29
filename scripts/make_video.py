@@ -80,7 +80,7 @@ def sweep(wr, data, which, seq, nseq, test=False):
     name = {"left": "Left ear", "emitter": "Emitter", "two-way": "Two-way (emitter x left ear)"}[which]
     lay = cv.DataLayout(TITLE, ["Response", "Frequency", "Sequence"], [sp[k]["taxon"] for k in ORDER] + [""],
                         ncol=4, cbar_label="Magnitude (dB re max)", vmin=VMIN, vmax=0,
-                        note="Lambert equal-area front and back hemispheres, CT frame of each head; 30 dB range, normalized\n"
+                        note="Lambert equal-area front and back hemispheres, frame of each head (P. discolor: pose of De Mey et al.); 30 dB range, normalized\n"
                              "per species and frequency; E. fuscus and M. daubentonii emitters: analytical pistons")
     lambert_legend(lay.ctx)
     lay.axes[-1].axis("off")
@@ -133,7 +133,7 @@ def turntable(wr, seq, nseq, test=False):
     """The seven heads rotating about the vertical axis, with the ear (blue) and emitter (red) landmarks."""
     sp = paths.species()
     lay = cv.DataLayout(TITLE, ["Shown", "View azimuth", "Sequence"], [sp[k]["taxon"] for k in ORDER] + [""],
-                        ncol=4, cbar_label="", note="Clean micro-CT head meshes in the CT frame (X forward, Y left, Z up)\n"
+                        ncol=4, cbar_label="", note="Clean micro-CT head meshes as simulated (X forward, Y left, Z up; P. discolor in the pose of De Mey et al.)\n"
                         "blue: ear receiver patches; red: nostril patches or mouth piston centre")
     for cax in lay.fig.axes:                             # no colorbars for the meshes
         if cax.get_position().x0 > 0.93:

@@ -1,7 +1,6 @@
 """Export the dataset for Zenodo: one folder per species with
-  mesh.stl                      clean dataset mesh (CT frame, metres)
-  mesh_<frame>.stl              the same mesh in the coordinates of ertf_<frame>.h5 (origin = centre of the
-                                evaluation sphere, X = azimuth 0, Y = azimuth +90 deg, Z = elevation +90 deg)
+  mesh.stl                      clean dataset mesh, metres, in the coordinates of ertf_ct.h5 (origin = centre of
+                                the evaluation sphere, X = azimuth 0, Y = azimuth +90 deg, Z = elevation +90 deg)
   ertf_<frame>.h5               all sources (nominal + placement ensemble), complex H [el, az, f], metadata
   ears_<frame>.sofa             nominal left/right ear, SOFA SimpleFreeFieldHRTF (frequency domain, 2 receivers)
   emitter_<frame>.sofa          nominal emitter, SOFA FreeFieldDirectivityTF
@@ -104,7 +103,9 @@ def main():
             print(f"{key}: no complete production file, skipped")
             continue
         d = out / sp["name"].replace(" ", "_")
-        d.mkdir(exist_ok=True)
+        if d.exists():                                   # rebuild: no files left over from an earlier layout
+            shutil.rmtree(d)
+        d.mkdir()
         shutil.copy(paths.ROOT / "data" / "meshes" / "dataset" / meta[key]["file"], d / "mesh.stl")
         info = {"species": sp["taxon"], "file_species": sp["name"], "taxon": sp["taxon"], "family": sp["family"], "emitter": sp["emitter"], "mesh": meta[key],
                 "landmarks_ct_frame_m": sp["landmarks"], "frames": {}, "convention": CONVENTION}
@@ -130,15 +131,13 @@ def main():
                 h.attrs["poles"] = "elevation +-90 deg rows repeat the single pole value for every azimuth"
             with h5py.File(fn) as h:
                 R = np.asarray(h.attrs["R"])
-                mf = trimesh.load(paths.ROOT / "data" / "meshes" / "dataset" / meta[key]["file"], process=False)
-                mf.vertices = mf.vertices @ R                # v_frame = R^T v_ct: the mesh as the solver saw it
-                mf.export(d / f"mesh_{frame}.stl")
+                assert np.allclose(R, np.eye(3)), "one frame per species: the mesh is in the frame of the data"
                 info["frames"].setdefault(frame, {})["landmarks_m"] = {
                     k: (np.asarray(v) @ R).tolist() for k, v in sp["landmarks"].items()}
                 info["frames"][frame]["alternative_positions_m"] = {     # sources <name>_alt<i>, in order
                     k: [(np.asarray(a) @ R).tolist() for a in v] for k, v in run_ertf.ensemble(key, sp["landmarks"]).items()}
                 f, az, el = h["freqs"][:], h["azimuth"][:], h["elevation"][:]
-                info["frames"][frame].update({"R_frame_to_ct": R.tolist(), "mesh": f"mesh_{frame}.stl",
+                info["frames"][frame].update({"R_frame_to_ct": R.tolist(), "mesh": "mesh.stl",
                                          "sources": [n for n in h if isinstance(h[n], h5py.Group)],
                                          "freq_hz": [float(f[0]), float(f[-1]), float(f[1] - f[0])]})
                 sf.write_sofa(str(d / f"ears_{frame}.sofa"),

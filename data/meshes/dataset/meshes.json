@@ -35,7 +35,7 @@
   "species": "Phyllostomus discolor",
   "file": "Phyllostomus_discolor.stl",
   "source_ct_mesh": "phyllo.stl",
-  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres",
+  "frame": "CT frame, X forward (CT z), Y left (CT x), Z up (CT y), metres; rotated into the pose of De Mey et al. 2008 (pose_rotation)",
   "n_faces": 53984,
   "n_vertices": 26982,
   "watertight": true,
@@ -61,7 +61,27 @@
    0.05868372947863408,
    0.16276447420588036,
    0.7655756291826493
-  ]
+  ],
+  "pose_rotation": {
+   "matrix_v_new_eq_v_ct_times_M": [
+    [
+     0.84626,
+     0.221636,
+     -0.48448
+    ],
+    [
+     -0.138887,
+     0.969694,
+     0.201008
+    ],
+    [
+     0.514347,
+     -0.102818,
+     0.851396
+    ]
+   ],
+   "note": "head in the pose of De Mey et al. 2008 (scripts/rotate_pdisc_pose.py)"
+  }
  },
  "mmacr": {
   "species": "Macrophyllum macrophyllum",

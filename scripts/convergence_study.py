@@ -55,10 +55,7 @@ def make_mesh(key, L_mm):
     if not clean:
         print(f"{key} L={L_mm:.3f} mm: not clean, skipped", flush=True)
         return None
-    m.apply_scale(1e-3)
-    T = np.eye(4)
-    T[:3, :3] = remesh_ct.CT_TO_FRAME
-    m.apply_transform(T)
+    remesh_ct.to_frame(m, key)
     if m.volume < 0:
         m.invert()
     m.export(fn)

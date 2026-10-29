@@ -212,6 +212,26 @@ class ERTF:
         e = self.interp(emitter, directions, freqs)
         return {ear: e * self.interp(ear, directions, freqs) for ear in ears}
 
+    def piston(self, radius, directions, freqs=None):
+        """Oral species only: the analytical piston emitter (batertf/piston.py) with any radius [m], at the centre
+        and axis of the dataset emitter, at unit vectors `directions` (..., 3) (current head orientation). The beam
+        of mouth-emitting bats depends on behaviour (wider in confined spaces than in the open field), so the
+        radius is a parameter. Returns complex (..., n_freqs), referenced and conjugated like the data."""
+        a = self.source_attrs.get("emitter", {})
+        if "centre_m" not in a:
+            raise ValueError("no piston emitter: nasal species are BEM results")
+        u = np.asarray(directions, float)
+        u = u / np.linalg.norm(u, axis=-1, keepdims=True)
+        centre, axis = self.orientation @ np.asarray(a["centre_m"]), self.orientation @ np.asarray(a["axis"])
+        f = self.freqs if freqs is None else np.asarray(freqs, float)
+        k = 2 * np.pi * f / C
+        cos_t = np.clip(u @ axis, -1, 1)
+        x = k * radius * np.sqrt(1 - cos_t ** 2)[..., None]
+        tau = np.linspace(0, np.pi, 257)                               # J1(x) = 1/pi int_0^pi cos(tau - x sin tau)
+        j1 = np.trapezoid(np.cos(tau - x[..., None] * np.sin(tau)), tau, axis=-1) / np.pi
+        d = np.where(x < 1e-9, 1.0, 2 * j1 / np.maximum(x, 1e-9)) * (1 + cos_t[..., None]) / 2
+        return 2 * d * np.exp(1j * k * (u @ centre)[..., None])
+
     def impulse_response(self, source, directions, fs=500e3, n=1024, t0=0.2e-3, taper=5e3):
         """Impulse response(s) (..., n) of `source` towards `directions`, sampled at fs, by irfft of H on the
         FFT grid with a raised-cosine taper of width `taper` [Hz] at both band edges (no data below fmin =

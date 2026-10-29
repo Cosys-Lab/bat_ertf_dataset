@@ -1,0 +1,68 @@
+{
+ "what": "Lobe structure of the R. formosae emitter for the nostril pairs of the placement rule, at 36-43 kHz (the range of",
+ "freqs_khz": [
+  36.0,
+  40.0,
+  43.0
+ ],
+ "sources": {
+  "emitter": {
+   "label": "nominal (rule's second choice)",
+   "per_frequency": [
+    {
+     "freq_khz": 36.0,
+     "main_lobe_az_el_deg": [
+      0.0,
+      2.5
+     ],
+     "next_lobe_db": -6.0298919677734375
+    },
+    {
+     "freq_khz": 40.0,
+     "main_lobe_az_el_deg": [
+      0.0,
+      5.0
+     ],
+     "next_lobe_db": -7.323665618896484
+    },
+    {
+     "freq_khz": 43.0,
+     "main_lobe_az_el_deg": [
+      2.5,
+      7.5
+     ],
+     "next_lobe_db": -4.620401382446289
+    }
+   ]
+  },
+  "emitter_alt1": {
+   "label": "rule's first choice",
+   "per_frequency": [
+    {
+     "freq_khz": 36.0,
+     "main_lobe_az_el_deg": [
+      0.0,
+      22.5
+     ],
+     "next_lobe_db": -1.2669591903686523
+    },
+    {
+     "freq_khz": 40.0,
+     "main_lobe_az_el_deg": [
+      -47.5,
+      2.5
+     ],
+     "next_lobe_db": -0.16611289978027344
+    },
+    {
+     "freq_khz": 43.0,
+     "main_lobe_az_el_deg": [
+      5.0,
+      20.0
+     ],
+     "next_lobe_db": -0.07677173614501953
+    }
+   ]
+  }
+ }
+}
