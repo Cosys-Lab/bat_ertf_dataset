@@ -13,8 +13,8 @@ head meshes. Dataset DOI: https://doi.org/10.5281/zenodo.23729269. Paper: Scient
 | Macrophyllum_macrophyllum | *Macrophyllum macrophyllum* | Phyllostomidae | two nostrils (BEM) | 20-160 |
 | Rhinolophus_rouxii | *Rhinolophus rouxii* | Rhinolophidae | two nostrils (BEM) | 20-160 |
 | Rhinolophus_formosae | *Rhinolophus formosae* | Rhinolophidae | two nostrils (BEM) | 20-135 |
-| Eptesicus_fuscus | *Eptesicus fuscus* | Vespertilionidae | mouth (analytical piston, a = 6.59 mm) | 20-160 |
-| Myotis_daubentonii | *Myotis daubentonii* | Vespertilionidae | mouth (analytical piston, a = 6.28 mm) | 20-160 |
+| Eptesicus_fuscus | *Eptesicus fuscus* | Vespertilionidae | mouth (analytical piston, a = 6.59 mm for free-flight search calls; 2.5-6.5 mm alternatives) | 20-160 |
+| Myotis_daubentonii | *Myotis daubentonii* | Vespertilionidae | mouth (analytical piston, a = 6.28 mm for free-flight search calls; 2.5-6.5 mm alternatives) | 20-160 |
 
 ## Files per species
 
@@ -41,7 +41,7 @@ head meshes. Dataset DOI: https://doi.org/10.5281/zenodo.23729269. Paper: Scient
 | `left/H`, `right/H`, `emitter/H` | complex64 transfer function [elevation, azimuth, frequency] |
 | `<source>/patch_faces` | indices of the vibrating mesh faces |
 | `left_alt1..4`, `right_alt1..4`, `emitter_alt1..4` (nasal species) | placement ensemble: alternative receiver and nostril positions |
-| `emitter_alt1..5` (oral species) | analytical pistons of 2.5, 3.5, 4.5, 5.5 and 6.5 mm radius (same centre and axis as `emitter`). The nominal `emitter` is calibrated to the open-field search beam; bats emit wider beams in the laboratory and in confined spaces (about 3.1-4.7 mm). `code/batertf/dataset.py` computes the piston for any radius (`ERTF.piston`) |
+| `emitter_alt1..5` (oral species) | analytical pistons of 2.5, 3.5, 4.5, 5.5 and 6.5 mm radius (same centre and axis as `emitter`). The nominal `emitter` is calibrated to search calls in free flight in the open field, the narrowest beam these bats emit. It is not a general emission pattern: adapt the radius to the situation you model (the beam is wider in the laboratory, in confined spaces and when approaching prey, about 3-5 mm). `code/batertf/dataset.py` computes the piston for any radius (`ERTF.piston`) |
 | attributes | species, frame, R (frame to CT rotation), landmarks, solver version (git), conventions |
 
 ## Conventions
