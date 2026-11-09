@@ -87,9 +87,13 @@ to preserve them and to make the most of this resource for future research.
 |---|---|
 | Scanner, voxel size, scan settings | P. discolor, M. microtis: SkyScan 1076 micro-CT, 35 um, downsampled to 70 um (Vanderelst et al. 2010, procedure of De Mey et al. 2008); R. rouxii: 70 um (Vanderelst et al. 2011) |
 | Segmentation software and procedure | Amira, automatic thresholding with manual corrections (Vanderelst et al. 2010) |
-| Origin of the meshes | made in Antwerp between 2008 and 2012. P. discolor: De Mey et al. 2008; R. rouxii: Vanderelst et al. 2011; R. formosae: Vanderelst et al. 2013; M. microtis, M. daubentonii, M. macrophyllum: EU project ChiRoPing (FP7-215370); E. fuscus: specimen provided by Cynthia F. Moss, scanned and meshed in Antwerp |
+| Origin of the meshes | The original head meshes were created as part of the EU projects Cilia (FP6-IST-016039) and ChiRoPing (FP7-215370). |
 | Earlier publications using the meshes | P. discolor: De Mey et al. 2008; M. microtis: Vanderelst et al. 2010; R. rouxii: Vanderelst et al. 2011; R. formosae: Vanderelst et al. 2013; M. macrophyllum, E. fuscus, M. daubentonii: published here for the first time |
 | Processing in this release (cleaning, remeshing, frame) | fully documented (paper, Supplementary Note 1, `code/`) |
+
+## Acknowledgements
+
+The original head meshes were created as part of the EU projects Cilia (FP6-IST-016039) and ChiRoPing (FP7-215370).
 
 ## Licence
 

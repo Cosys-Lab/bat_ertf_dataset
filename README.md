@@ -67,6 +67,10 @@ Machine-specific paths (work folder for large outputs, NumCalc binary) go in `co
 
 Details are in the dataset README.
 
+## Acknowledgements
+
+The original head meshes were created as part of the EU projects Cilia (FP6-IST-016039) and ChiRoPing (FP7-215370).
+
 ## Citation and licence
 
 Please cite the Data Descriptor and the dataset (DOI 10.5281/zenodo.23729269). The code is released under the BSD
